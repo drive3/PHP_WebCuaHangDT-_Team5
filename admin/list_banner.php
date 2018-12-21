@@ -97,7 +97,7 @@
                                 ;?>
                             </tbody>
                           
-                            <thead>
+                            <!-- <thead>
                                 <tr>
                                     <td><input type="checkbox" name="checkAll" id="checkAll"></td>
                                     <td><span class="thead-text">STT</span></td>
@@ -105,7 +105,7 @@
                                     <td><span class="thead-text">Hình ảnh</span></td>
                                    
                                 </tr>
-                            </thead>
+                            </thead> -->
                         </table>
 
                   </div>

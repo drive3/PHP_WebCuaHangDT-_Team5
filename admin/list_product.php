@@ -140,7 +140,7 @@
     echo ' Trang hiện tại: 1';
   }
 ?>
-                            <thead>
+                            <!-- <thead>
                                 <tr>
                                     <td><input type="checkbox" name="checkAll" id="checkAll"></td>
                                     <td><span class="thead-text">STT</span></td>
@@ -152,7 +152,7 @@
                                     <td><span class="thead-text">Danh mục</span></td>
                                     <td><span class="thead-text">Chi tiết</span></td>
                                 </tr>
-                            </thead>
+                            </thead> -->
                         </table>
 
                   </div>
