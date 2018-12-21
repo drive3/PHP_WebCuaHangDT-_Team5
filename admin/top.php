@@ -1,4 +1,4 @@
-            <div class="navbar nav_title" style="border: 0;"><a href="/PHP_WebCuaHangDT_Team5/admin/list_product.php" class="site_title"><i class="fa fa-paw"></i> <span>Team 5</span></a></div>
+            <div class="navbar nav_title" style="border: 0;"><a href="/PHP_WebCuaHangDT_Team5/admin/home.php" class="site_title"><i class="fa fa-paw"></i> <span>Team 5</span></a></div>
             <div class="clearfix"></div>
 
             <!-- menu profile quick info -->
@@ -22,12 +22,10 @@
                 <ul class="nav side-menu">
                    <li><a><i class="fa fa-home"></i> Sản phẩm<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <!-- <li><a href="add_cat.php">Thêm mới </a></li> -->
                       <li><a href="list_product.php">Danh sách sản phẩm </a></li>
                       <li><a href="list_cat.php">Danh mục sản phẩm</a></li>
                     </ul>
                   </li>
-                  <!-- <li><a href="home.php"><i class="fa fa-home"></i> Trang quản trị</a></li> -->
                   <li><a><i class="fa fa-table"></i> Banner <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="add_banner.php">Thêm mới</a></li>
@@ -43,7 +41,6 @@
                  
                   <li><a><i class="fa fa-table"></i> Sản phẩm sale<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <!-- <li><a href="add_cat.php">Thêm mới </a></li> -->
                       <li><a href="list_product_sale.php">Danh sách sản phẩm sale</a></li>
                       
                     </ul>
@@ -52,16 +49,11 @@
                   <li><a><i class="fa fa-table"></i> Bán hàng<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="list_order.php">Danh sách đơn hàng</a></li>
-                      <li><a href="nxb_quan_tri.php">Danh sách khách hàng</a></li>
                     </ul>
                   </li>
                  
-                  <li><a href="quan_tri_lien_he.php"><i class="fa fa-bar-chart-o"></i> Quản trị Liên hệ</a></li>
               </div>
             </div>
-            <!-- /sidebar menu -->
-
-            <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
               <a data-toggle="tooltip" data-placement="top" title="Settings">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
@@ -76,11 +68,9 @@
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
-            <!-- /menu footer buttons -->
           </div>
         </div>
 
-        <!-- top navigation -->
         <div class="top_nav">
           <div class="nav_menu">
             <nav>
