@@ -9,17 +9,7 @@
       </div>
       <div class="one_quarter">
         <h6 class="heading">CONTACT</h6>
-      <!--   <nav>
-          <ul class="nospace">
-            <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Cookies</a></li>
-            <li><a href="#">Disclaimer</a></li>
-          </ul>
-        </nav> -->
+     
         <ul class="faico clear">
           <li><a class="faicon-facebook" href="https://www.facebook.com/profile.php?id=100009413897282"><i class="fa fa-facebook"></i></a></li>
           <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>

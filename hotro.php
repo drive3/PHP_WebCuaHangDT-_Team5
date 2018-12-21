@@ -47,37 +47,20 @@ Máy không giữ nguyên 100% hình dạng ban đầu.
 Màn hình bị trầy xước.
 => Không áp dụng bảo hành, đổi trả. quanghien.com hỗ trợ chuyển bảo hành, khách hàng chịu chi phí sửa chữa.
     </div>
-    <!-- ################################################################################################ -->
-    <!-- / main body -->
     <div class="clear"></div>
   </main>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- Footer Background Image Wrapper -->
+
 <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/x1.jpg');"> 
-  <!-- ################################################################################################ -->
   <div class="wrapper row4">
     <footer id="footer" class="hoc clear"> 
-      <!-- ################################################################################################ -->
         <div class="one_quarter first">
         <h6 class="heading">Team</h6>
         
       </div>
       <div class="one_quarter">
         <h6 class="heading">CONTACT</h6>
-      <!--   <nav>
-          <ul class="nospace">
-            <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Cookies</a></li>
-            <li><a href="#">Disclaimer</a></li>
-          </ul>
-        </nav> -->
+   
         <ul class="faico clear">
           <li><a class="faicon-facebook" href="https://www.facebook.com/profile.php?id=100009413897282"><i class="fa fa-facebook"></i></a></li>
           <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -100,26 +83,18 @@ Màn hình bị trầy xước.
 			0974560838
         </ul>
       </div>
-      <!-- ################################################################################################ -->
+      
     </footer>
   </div>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
+
   <div class="wrapper row5">
     <div id="copyright" class="hoc clear"> 
       <!-- ################################################################################################ -->
       <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
       <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-      <!-- ################################################################################################ -->
     </div>
   </div>
-  <!-- ################################################################################################ -->
 </div>
-<!-- End Footer Background Image Wrapper -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
 <script src="../layout/scripts/jquery.min.js"></script>
