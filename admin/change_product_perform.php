@@ -24,7 +24,7 @@
 		echo '
 		<script type="text/javascript">
 			alert("Sửa danh mục lỗi. Vui lòng điền đầy đủ thông tin!!!");
-			window.location.href="/Project_PHP_Team5/admin/change_product&id=$id";
+			window.location.href="/PHP_WebCuaHangDT_Team5/admin/change_product&id=$id";
 		</script>';
 	} else {
 		$sql = "UPDATE tbl_product SET name='$name', masp='$masp', price='$price', image='$image',category='$category',chitiet='$chitiet',soluong='$soluong'   WHERE id='$id'";
@@ -35,6 +35,6 @@
 	echo '
 		<script type="text/javascript">
 			alert("Sửa sản phẩm thành công!!!");
-			window.location.href="Project_PHP_Team5/admin/list_product.php";
+			window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_product.php";
 		</script>';
 ;?>

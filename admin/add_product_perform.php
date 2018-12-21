@@ -26,6 +26,6 @@
 	echo '
 		<script type="text/javascript">
 			alert("Thêm mới sản phẩm thành công!!!");
-			window.location.href="/Project_PHP_Team5/admin/list_product.php";
+			window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_product.php";
 		</script>';
 ;?>

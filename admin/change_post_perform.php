@@ -17,7 +17,7 @@
 		echo '
 		<script type="text/javascript">
 			alert("Sửa bài viết lỗi. Vui lòng điền đầy đủ thông tin!!!");
-			window.location.href="/Project_PHP_Team5/admin/?page=change_post&id=$id";
+			window.location.href="/PHP_WebCuaHangDT_Team5/admin/?page=change_post&id=$id";
 		</script>';
 	} else {
 		if($image==NULL) {		
@@ -31,6 +31,6 @@
 	echo '
 		<script type="text/javascript">
 			alert("Sửa bài viết thành công!!!");
-			window.location.href="/Project_PHP_Team5/admin/list_post.php";
+			window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_post.php";
 		</script>';
 ;?>
