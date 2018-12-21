@@ -108,29 +108,29 @@
                               ;?>
                             </tbody>
                             <?php
-  $sql_trang = "select * from tbl_oder";
-  $run_trang = mysqli_query($conn,$sql_trang);
-  $sosach = mysqli_num_rows($run_trang);
-  $sotrang = ceil($sosach/8);
-  if ($sotrang == 0){
-    echo ' Không có sách nào!';
-  }
-  else{
-    echo ' Trang:';
-  }
-  for($b=1;$b<=$sotrang;$b++){
-    echo '<a href="?trang='.$b.'" style="text-decoration:none">'.' '.$b.' '.'</a>';
-  }
-?>
-<?php
-  echo '</br>';
-  if($get_trang >= 1){
-    echo ' Trang hiện tại: '.$get_trang;
-  }
-    if($get_trang == '' && $sotrang >= 1){
-    echo ' Trang hiện tại: 1';
-  }
-?>
+                                $sql_trang = "select * from tbl_oder";
+                                $run_trang = mysqli_query($conn,$sql_trang);
+                                $sosach = mysqli_num_rows($run_trang);
+                                $sotrang = ceil($sosach/8);
+                                if ($sotrang == 0){
+                                  echo ' Không có sách nào!';
+                                }
+                                else{
+                                  echo ' Trang:';
+                                }
+                                for($b=1;$b<=$sotrang;$b++){
+                                  echo '<a href="?trang='.$b.'" style="text-decoration:none">'.' '.$b.' '.'</a>';
+                                }
+                              ?>
+                              <?php
+                                echo '</br>';
+                                if($get_trang >= 1){
+                                  echo ' Trang hiện tại: '.$get_trang;
+                                }
+                                  if($get_trang == '' && $sotrang >= 1){
+                                  echo ' Trang hiện tại: 1';
+                                }
+                              ?>
                             <thead>
                                <tr>
                                     <td><input type="checkbox" name="checkAll" id="checkAll"></td>
@@ -152,7 +152,7 @@
             </div>
             <!-- /page content -->
 
-            <?php include("bottom.php");?>
+            <!-- <?php include("bottom.php") ;?> -->
       </div>
     </div>
 

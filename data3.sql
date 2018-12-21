@@ -1,11 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 4.8.3
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Nov 21, 2018 at 06:04 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.11
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +12,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `data3`
+-- Cơ sở dữ liệu: `data3`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `banner`
+-- Cấu trúc bảng cho bảng `banner`
 --
 
 CREATE TABLE `banner` (
@@ -36,20 +29,21 @@ CREATE TABLE `banner` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `banner`
+-- Đang đổ dữ liệu cho bảng `banner`
 --
 
 INSERT INTO `banner` (`id`, `title`, `image`, `active`) VALUES
-(33, '', '636779672896020000_H1-Mi 8 Pro.png', 0),
 (34, '', '636778948808659826_H1x2.png', 0),
 (36, '', '636779288388257732_Banner-H1-iphone-Xs---normal-sale-(1).png', 0),
 (37, '', '636779838966110110_H1-2.png', 0),
-(38, '', '636778948808659826_H1x2.png', 0);
+(38, '', '636778948808659826_H1x2.png', 0),
+(39, '', '636779288388257732_Banner-H1-iphone-Xs---normal-sale-(1).png', 0),
+(43, '', 'ipx.jpg', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_category`
+-- Cấu trúc bảng cho bảng `tbl_category`
 --
 
 CREATE TABLE `tbl_category` (
@@ -59,7 +53,7 @@ CREATE TABLE `tbl_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `tbl_category`
+-- Đang đổ dữ liệu cho bảng `tbl_category`
 --
 
 INSERT INTO `tbl_category` (`id`, `title`, `content`) VALUES
@@ -73,7 +67,7 @@ INSERT INTO `tbl_category` (`id`, `title`, `content`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_comment`
+-- Cấu trúc bảng cho bảng `tbl_comment`
 --
 
 CREATE TABLE `tbl_comment` (
@@ -84,33 +78,18 @@ CREATE TABLE `tbl_comment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_comment`
+-- Đang đổ dữ liệu cho bảng `tbl_comment`
 --
 
 INSERT INTO `tbl_comment` (`id`, `idproduct`, `namemember`, `noidung`) VALUES
-(25, 47, 'a', 'a'),
-(26, 47, 'a', 'a'),
 (27, 47, 'a', 'a'),
-(28, 47, 'a', 'a'),
-(29, 47, 'Quang', 'cc'),
-(30, 47, 'aaa', 'm'),
-(31, 47, 'aaa', 'a'),
-(32, 47, 'aaa', 'a'),
-(33, 47, 'aaa', 'a'),
-(34, 54, 'Quang', 'sáº£n pháº©m tá»‘t'),
-(35, 54, 'Quang', 'sáº£n pháº©m tá»‘t'),
-(36, 55, 'ahihi', 'a'),
-(37, 55, 'ahihi', 'a'),
-(38, 55, 'ahihi', 'a'),
-(39, 18, 'c', 'c'),
-(40, 18, 'c', 'c'),
-(41, 50, 'Quang', 'sp kem'),
-(42, 94, 'Quang', 'ÄƒÃ¢');
+(44, 47, 'khai', 'good'),
+(45, 47, 'khai', 'good');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_oder`
+-- Cấu trúc bảng cho bảng `tbl_oder`
 --
 
 CREATE TABLE `tbl_oder` (
@@ -127,36 +106,27 @@ CREATE TABLE `tbl_oder` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `tbl_oder`
+-- Đang đổ dữ liệu cho bảng `tbl_oder`
 --
 
 INSERT INTO `tbl_oder` (`id`, `diachi`, `idproduct`, `soluong`, `tongtien`, `tenkhachhang`, `email`, `phone`, `note`, `hinhthuc`) VALUES
-(19, 'aaaaaaaaaaa', 50, 1, 26990000, 'test', 'vudinhtuan242@gmail.', '1234567890', 'aa', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(20, 'aaaaaaaaaaa', 50, 1, 53980000, 'Thá»­ ', 'vudinhtuan242@gmail.', '1234567890', 'Ã¢', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(21, 'aaaaaaaaaaa', 47, 1, 0, 'test', 'vudinhtuan242@gmail.', '1234567890', 'sss', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(22, 'abbbbbbbbbbbbbbb', 50, 1, 158950000, 'ná»‘t', 'admin@gmail.com', '1234567890', 'aaa', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(23, 'aaaaaaaaaaa', 54, 1, 0, 'láº§n cuá»‘i', 'vudinhtuan242@gmail.', '1234567890', 'ssss', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(24, 'aaaaaaaaaaa', 50, 1, 158950000, 'rÃ´i di ngá»§', 'vudinhtuan242@gmail.', '1234567890', 'ssss', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(25, 's', 47, 1, 43990000, 'test', 'vudinhtuan242@gmail.', '1234567890', 'cccc', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(26, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 43990000, 'admin@gmail.com', 'quangvm1998@gmail.co', '333125111', 'a', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(27, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 0, 'test', 'quangvm1998@gmail.co', '333125111', 'aa', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(28, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 87980000, 'test', 'quangvm1998@gmail.co', '333125111', 'aaa', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(29, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 87980000, 'test', 'quangvm1998@gmail.co', '333125111', 'aaa', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(30, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 0, 'test', 'quangvm1998@gmail.co', '333125111', 'aaaa', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(31, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 43990000, 'lá»—i Ã ', 'quangvm1998@gmail.co', '333125111', 'ccc', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(32, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 43990000, 'test', 'quangvm1998@gmail.co', '333125111', '13 576 42dd', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(33, 'HÃ²a bÃ¬nh, Cao Phong', 51, 1, 20990000, 'admin@gmail.com', 'quangvm1998@gmail.co', '333125111', 'Ã¢', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(34, 'HÃ²a bÃ¬nh, Cao Phong', 57, 1, 94970000, 'admin@gmail.com', 'quangvm1998@gmail.co', '333125111', '11111', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(35, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 43990000, 'test', 'quangvm1998@gmail.co', '333125111', '1111', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(36, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 43990000, 'admin@gmail.com', 'quangvm1998@gmail.co', '333125111', '11111', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(37, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 43990000, 'admin@gmail.com', 'quangvm1998@gmail.co', '333125111', 'aa', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(38, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 43990000, 'test', 'quangvm1998@gmail.co', '333125111', 'aaa', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
-(39, 'HÃ²a bÃ¬nh, Cao Phong', 47, 1, 43990000, 'admin@gmail.com', 'quangvm1998@gmail.co', '333125111', 'ÄƒÄƒÄƒÄƒÄƒ', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng');
+(41, 'tp/hcm', 47, 1, 0, 'quangkhai', 'thuuye100917@gmail.c', '0123456789', 'cáº£m Æ¡n ', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
+(42, '24727', 47, 1, 0, 'quangkhai', 'quangkhai@gmail.com', '0974560838', '578', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
+(43, '12345', 47, 1, 0, 'demo', 'quangkhai897@gmail.c', '125648798', 'dhasjkd', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
+(44, 'trÆ°á»ng trinh', 47, 1, 0, 'demo', 'admin@gmail.com', '0132456789', 'demo', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
+(45, 'sai gÃ²n', 48, 1, 78980000, 'quangkhai', 'admin@gmail.com', '0974560838', 'demo', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
+(46, 'trÆ°á»ng trinh', 53, 1, 0, 'quangkhai', 'quangkhai897@gmail.c', '0974560838', '', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
+(47, 'tp/hcm', 48, 1, 0, 'quangkhai', 'admin@gmail.com', '0132456789', '', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
+(48, 'sai gÃ²n', 48, 1, 0, 'quangkhai', 'quangkhai897@gmail.c', '0974560838', '', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
+(49, 'sai gÃ²n', 57, 1, 0, 'ahihi', 'ahihi@gmail.com', '0123456789', '', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
+(50, 'trÆ°á»ng trinh', 55, 1, 44980000, 'ahhahaa', 'ahhaha@gmail.com', '097845645', '', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
+(51, '123456', 48, 1, 0, 'quangkhai', 'quangkhai897@gmail.c', '1324', '', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng'),
+(52, '24727', 48, 1, 0, 'quangkhai', 'admin@gmail.com', '213', '', 'Thanh toÃ¡n táº¡i cá»­a hÃ ng');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_post`
+-- Cấu trúc bảng cho bảng `tbl_post`
 --
 
 CREATE TABLE `tbl_post` (
@@ -167,7 +137,7 @@ CREATE TABLE `tbl_post` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `tbl_post`
+-- Đang đổ dữ liệu cho bảng `tbl_post`
 --
 
 INSERT INTO `tbl_post` (`id`, `title`, `content`, `image`) VALUES
@@ -176,7 +146,7 @@ INSERT INTO `tbl_post` (`id`, `title`, `content`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_product`
+-- Cấu trúc bảng cho bảng `tbl_product`
 --
 
 CREATE TABLE `tbl_product` (
@@ -191,16 +161,15 @@ CREATE TABLE `tbl_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `tbl_product`
+-- Đang đổ dữ liệu cho bảng `tbl_product`
 --
 
 INSERT INTO `tbl_product` (`id`, `name`, `masp`, `price`, `image`, `category`, `chitiet`, `soluong`) VALUES
-(47, 'Iphone XS Max 512GB', 'IP1', 43990000, '636748771945393060_iPhone-Xs-Max-gold.png', '19', '<h3>Ä&aacute;nh gi&aacute; chi tiáº¿t iPhone Xs Max 64GB</h3>\r\n\r\n<p><a href=\"https://fptshop.com.vn/dien-thoai/iphone-xs-max-64gb\" target=\"_blank\"><strong>iPhone Xs Max 64GB</strong></a><strong>&nbsp;l&agrave; chiáº¿c iPhone c&oacute; m&agrave;n h&igrave;nh lá»›n nháº¥t tá»« trÆ°á»›c Ä‘áº¿n nay, mang Ä‘áº¿n nhá»¯ng tráº£i nghiá»‡m tuyá»‡t vá»i vá» m&agrave;n h&igrave;nh v&agrave; thá»i lÆ°á»£ng pin.</strong></p>\r\n\r\n<p><strong><img alt=\"\" src=\"https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iPhone-xs-max-1.JPG\" /></strong></p>\r\n\r\n<h2>&nbsp;</h2>\r\n\r\n<h2><strong>M&agrave;n h&igrave;nh lá»›n 6,5 inch chuáº©n Super Retina si&ecirc;u sáº¯c n&eacute;t</strong></h2>\r\n\r\n<p><strong>iPhone Xs Max 64GB</strong>&nbsp;c&oacute; m&agrave;n h&igrave;nh vÆ°á»£t trá»™i so vá»›i má»i tháº¿ há»‡ iPhone trÆ°á»›c Ä‘&acirc;y khi lá»›n tá»›i 6,5 inch, Ä‘Æ°á»£c l&agrave;m tá»« táº¥m ná»n OLED, há»— trá»£ hiá»ƒn thá»‹ HDR. HDR mang Ä‘áº¿n m&agrave;u sáº¯c ch&iacute;nh x&aacute;c, m&agrave;u Ä‘en c&oacute; chiá»u s&acirc;u, Ä‘á»™ s&aacute;ng v&agrave; Ä‘á»™ tÆ°Æ¡ng pháº£n tuyá»‡t vá»i. Báº¡n sáº½ Ä‘Æ°á»£c táº­n hÆ°á»Ÿng má»™t m&agrave;n h&igrave;nh cá»±c lá»›n, Ä‘á»™ ph&acirc;n giáº£i si&ecirc;u cao 2688 x 1242 pixels cho tráº£i nghiá»‡m xem Ä‘&aacute;ng kinh ngáº¡c.</p>\r\n\r\n<p><img alt=\"\" src=\"https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iPhone-xs-max-3.jpg\" /></p>\r\n\r\n<p>Náº¿u nhÆ° báº¡n lo láº¯ng m&agrave;n h&igrave;nh lá»›n sáº½ khiáº¿n cho&nbsp;<strong>iPhone Xs Max 64GB&nbsp;</strong>kh&oacute; cáº§m náº¯m tr&ecirc;n tay th&igrave; h&atilde;y qu&ecirc;n ngay ná»—i lo Ä‘&oacute;, v&igrave; viá»n m&agrave;n h&igrave;nh tr&agrave;n 4 cáº¡nh gi&uacute;p cho iPhone Xs Max tháº­m ch&iacute; c&ograve;n nhá» gá»n hÆ¡n iPhone 8 Plus. Ch&uacute;ng ta c&oacute; má»™t chiáº¿c m&aacute;y m&agrave;n h&igrave;nh lá»›n hÆ¡n ráº¥t nhiá»u, nhÆ°ng váº«n Ä‘á»§ gá»n g&agrave;ng Ä‘á»ƒ dá»… d&agrave;ng cáº§m náº¯m v&agrave; thao t&aacute;c.</p>\r\n\r\n<p><img alt=\"\" src=\"https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iPhone-xs-max-2.JPG\" /></p>\r\n\r\n<h2>&nbsp;</h2>\r\n\r\n<h2><strong>Sá»± káº¿t há»£p giá»¯a k&iacute;nh v&agrave; th&eacute;p, sang trá»ng nhÆ°ng kh&ocirc;ng k&eacute;m pháº§n bá»n vá»¯ng</strong></h2>\r\n\r\n<p><strong>iPhone Xs Max 64GB</strong>&nbsp;Ä‘Æ°á»£c ho&agrave;n thiá»‡n tá»« nhá»¯ng váº­t liá»‡u Ä‘áº·c biá»‡t, Ä‘&oacute; l&agrave; viá»n th&eacute;p kh&ocirc;ng gá»‰ s&aacute;ng b&oacute;ng v&agrave; máº·t k&iacute;nh bá»n nháº¥t trong tháº¿ giá»›i smartphone. Ká»¹ thuáº­t gia c&ocirc;ng ch&iacute;nh x&aacute;c ho&agrave;n háº£o cá»§a Apple mang Ä‘áº¿n chiáº¿c Ä‘iá»‡n thoáº¡i cá»©ng c&aacute;p, thá»i trang, vá»«a váº·n trong l&ograve;ng b&agrave;n tay báº¡n. Ba m&agrave;u sáº¯c thá»i thÆ°á»£ng X&aacute;m kh&ocirc;ng gian, Báº¡c v&agrave; V&agrave;ng cho nhá»¯ng lá»±a chá»n c&aacute; t&iacute;nh. Äáº·c biá»‡t, hai phi&ecirc;n báº£n m&agrave;u V&agrave;ng v&agrave; X&aacute;m Ä‘Æ°á»£c sÆ¡n báº±ng qu&aacute; tr&igrave;nh xá»­ l&yacute; m&agrave;u PVD, táº¡o hiá»‡u á»©ng &aacute;nh s&aacute;ng qua lá»›p k&iacute;nh ráº¥t Ä‘áº¹p máº¯t.</p>\r\n\r\n<p><img alt=\"\" src=\"https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-xs-3.jpg\" /></p>\r\n\r\n<h2>&nbsp;</h2>\r\n\r\n<h2><strong>Face ID tháº¿ há»‡ má»›i, máº­t kháº©u ch&iacute;nh l&agrave; khu&ocirc;n máº·t cá»§a báº¡n</strong></h2>\r\n\r\n<p>Face ID tr&ecirc;n&nbsp;<strong>iPhone Xs Max 64GB</strong>&nbsp;khiáº¿n cho viá»‡c báº£o máº­t Ä‘Æ¡n giáº£n v&agrave; an to&agrave;n hÆ¡n. Báº¡n c&oacute; thá»ƒ má»Ÿ kh&oacute;a, Ä‘Äƒng nháº­p, thanh to&aacute;n nhanh ch&oacute;ng th&ocirc;ng qua nháº­n diá»‡n khu&ocirc;n máº·t. Ngay khi Ä‘Æ°a m&aacute;y l&ecirc;n, há»‡ thá»‘ng camera TrueDepth sáº½ nháº­n diá»‡n tá»›i 30.000 Ä‘iá»ƒm tr&ecirc;n khu&ocirc;n máº·t cá»§a báº¡n v&agrave; má»Ÿ kh&oacute;a ngay láº­p tá»©c. Äá»“ng thá»i, há»‡ thá»‘ng n&agrave;y cÅ©ng sáº½ ghi nhá»› v&agrave; há»c há»i th&oacute;i quen cá»§a báº¡n Ä‘á»ƒ sau n&agrave;y d&ugrave; c&oacute; Ä‘á»™i mÅ© hay Ä‘eo k&iacute;nh th&igrave; Face ID váº«n nháº­n diá»‡n nhanh ch&oacute;ng Ä‘áº§y ch&iacute;nh x&aacute;c. Face ID cá»§a iPhone Xs Max ch&iacute;nh l&agrave; phÆ°Æ¡ng thá»©c báº£o máº­t an to&agrave;n nháº¥t tr&ecirc;n smartphone tá»« trÆ°á»›c Ä‘áº¿n nay.</p>\r\n\r\n<p><img alt=\"\" src=\"https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-xs-4.jpg\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2><strong>iPhone Xs Max 64GB sá»Ÿ há»¯u&nbsp;</strong><strong>Apple A12 Bionic, con chip th&ocirc;ng minh v&agrave; máº¡nh máº½ nháº¥t</strong></h2>\r\n\r\n<p><strong>iPhone Xs Max 64GB&nbsp;</strong>mang tr&ecirc;n m&igrave;nh con chip A12 Bionic c&oacute; 6 nh&acirc;n, trong Ä‘&oacute; 2 nh&acirc;n hiá»‡u nÄƒng cao nhanh hÆ¡n 15% v&agrave; 4 nh&acirc;n tiáº¿t kiá»‡m Ä‘iá»‡n tiáº¿t kiá»‡m hÆ¡n 50% so vá»›i tháº¿ há»‡ trÆ°á»›c A11 Bionic cá»§a iPhone X. Äá»“ng thá»i GPU Ä‘á»“ há»a cá»§a A12 Bionic máº¡nh hÆ¡n tá»›i 50%, cho ph&eacute;p báº¡n chÆ¡i má»i tá»±a game á»Ÿ cáº¥u h&igrave;nh cao nháº¥t má»™t c&aacute;ch nháº¹ nh&agrave;ng v&agrave; mÆ°á»£t m&agrave;.</p>\r\n\r\n<p><img alt=\"\" src=\"https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-xs-6.jpg\" /></p>\r\n\r\n<p>Kh&ocirc;ng chá»‰ máº¡nh máº½, Ä‘iá»ƒm kh&aacute;c biá»‡t cá»§a A12 Bionic c&ograve;n Ä‘áº¿n tá»« sá»± th&ocirc;ng minh cá»§a con chip n&agrave;y. Vá»›i 8 nh&acirc;n Neural Engine c&oacute; kháº£ nÄƒng há»c há»i theo thá»i gian thá»±c,&nbsp;<strong>iPhone Xs Max 64GB</strong>&nbsp;c&oacute; thá»ƒ nháº­n ra th&oacute;i quen sá»­ dá»¥ng Ä‘iá»‡n thoáº¡i cá»§a báº¡n, sau Ä‘&oacute; Ä‘Æ°a ra nhá»¯ng dá»± Ä‘o&aacute;n, h&agrave;nh Ä‘á»™ng xá»­ l&yacute; nhanh dá»±a tr&ecirc;n nhá»¯ng g&igrave; báº¡n l&agrave;m tá»«ng ng&agrave;y. 8 nh&acirc;n AI ri&ecirc;ng biá»‡t c&ograve;n há»— trá»£ cho iPhone Xs Max trong ráº¥t nhiá»u trÆ°á»ng há»£p, tá»« nháº­n diá»‡n khu&ocirc;n máº·t, chá»¥p áº£nh x&oacute;a ph&ocirc;ng, smart HDR cho Ä‘áº¿n c&ocirc;ng nghá»‡ thá»±c táº¿ tÄƒng cÆ°á»ng AR.</p>\r\n\r\n<p><img alt=\"\" src=\"https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-xs-7.jpg\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2><strong>Thoáº£i m&aacute;i tráº£i nghiá»‡m vá»›i thá»i lÆ°á»£ng pin d&agrave;i</strong></h2>\r\n\r\n<p>Nhá» vi&ecirc;n pin lá»›n hÆ¡n, káº¿t há»£p vá»›i con chip tiáº¿t kiá»‡m Ä‘iá»‡n A12 Bionic,&nbsp;<strong>iPhone Xs Max 64GB</strong>&nbsp;cho báº¡n nhá»¯ng tráº£i nghiá»‡m thoáº£i m&aacute;i m&agrave; kh&ocirc;ng cáº§n lo Ä‘áº¿n thá»i lÆ°á»£ng pin. iPhone Xs Max c&oacute; thá»ƒ sá»­ dá»¥ng l&acirc;u hÆ¡n iPhone X tá»›i 1 giá» 30 ph&uacute;t, Ä‘á»§ cho báº¡n táº­n hÆ°á»Ÿng trong suá»‘t hÆ¡n má»™t ng&agrave;y d&agrave;i.</p>\r\n\r\n<p><img alt=\"\" src=\"https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-xs-5.JPG\" /></p>\r\n\r\n<h2>&nbsp;</h2>\r\n\r\n<h2><strong>Há»‡ thá»‘ng camera k&eacute;p má»›i, má»Ÿ ra ká»· nguy&ecirc;n má»›i cho nhiáº¿p áº£nh</strong></h2>\r\n\r\n<p>Camera&nbsp;<strong>iPhone Xs Max 64GB</strong>&nbsp;l&agrave;m Ä‘Æ°á»£c hÆ¡n cáº£ nhá»¯ng g&igrave; báº¡n nghÄ© tr&ecirc;n má»™t chiáº¿c Ä‘iá»‡n thoáº¡i. Dá»±a tr&ecirc;n cáº£m biáº¿n xá»­ l&yacute; h&igrave;nh áº£nh ISP ti&ecirc;n tiáº¿n, t&iacute;nh nÄƒng Smart HDR mang Ä‘áº¿n sá»± tÆ°Æ¡ng pháº£n &aacute;nh s&aacute;ng r&otilde; rá»‡t trong má»—i bá»©c áº£nh, t&aacute;i hiá»‡n cuá»™c sá»‘ng Ä‘áº§y ch&acirc;n thá»±c. Trong khi Ä‘&oacute; áº£nh chá»¥p x&oacute;a ph&ocirc;ng Ä‘Æ°á»£c n&acirc;ng táº§m khi kh&ocirc;ng chá»‰ x&oacute;a ph&ocirc;ng ch&iacute;nh x&aacute;c m&agrave; báº¡n c&ograve;n c&oacute; thá»ƒ t&ugrave;y chá»‰nh Ä‘á»™ má» háº­u cáº£nh sau khi chá»¥p.</p>\r\n\r\n<p><img alt=\"\" src=\"https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iPhone-xs-max-4.JPG\" /></p>\r\n\r\n<p>Vá»›i cáº£m biáº¿n c&oacute; Ä‘iá»ƒm áº£nh lá»›n hÆ¡n,&nbsp;<strong>iPhone Xs Max 64GB</strong>&nbsp;c&oacute; kháº£ nÄƒng chá»¥p Ä‘áº¹p trong cáº£ Ä‘iá»u kiá»‡n &aacute;nh s&aacute;ng yáº¿u. Tháº­m ch&iacute; khi chá»¥p c&aacute;c cáº£nh h&agrave;nh Ä‘á»™ng, iPhone Xs Max cÅ©ng l&agrave;m xuáº¥t sáº¯c nhá» cáº£m biáº¿n nhanh hÆ¡n, Smart HDR v&agrave; Ä‘á»™ trá»… m&agrave;n tráº­p gáº§n nhÆ° báº±ng 0. á»ž má»i ho&agrave;n cáº£nh th&igrave; iPhone Xs Max cÅ©ng Ä‘á»u thá»ƒ hiá»‡n kháº£ nÄƒng chuy&ecirc;n nghiá»‡p trong nhiáº¿p áº£nh, chá»¥p nhanh ch&oacute;ng v&agrave; Ä‘Æ¡n giáº£n nhÆ°ng hiá»‡u quáº£ cá»±c ká»³ cao.</p>\r\n\r\n<p><img alt=\"\" src=\"https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-xs-9.jpg\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n', 7),
-(48, 'Iphone Xs 256GB', 'IP02', 34990000, 'xs.png', '19', '<h2 style=\"box-sizing: border-box; margin: 10px 0px; padding: 0px; border: 0px; font-size: 20px; font-weight: normal; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\">iPhone Xs 256GB&nbsp;m&agrave;n h&igrave;nh OLED HDR chuáº©n Super Retina si&ecirc;u sáº¯c n&eacute;t</strong></h2>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">M&agrave;n h&igrave;nh iPhone Xs c&oacute; k&iacute;ch thÆ°á»›c 5,8 inch, Ä‘Æ°á»£c l&agrave;m tá»« táº¥m ná»n OLED c&ocirc;ng nghá»‡ ti&ecirc;n tiáº¿n nháº¥t hiá»‡n nay, há»— trá»£ hiá»ƒn thá»‹ HDR. HDR mang Ä‘áº¿n m&agrave;u sáº¯c ch&iacute;nh x&aacute;c, m&agrave;u Ä‘en c&oacute; chiá»u s&acirc;u, Ä‘á»™ s&aacute;ng v&agrave; Ä‘á»™ tÆ°Æ¡ng pháº£i tuyá»‡t vá»i. iPhone Xs ch&iacute;nh l&agrave; sáº£n pháº©m Apple c&oacute; máº­t Ä‘á»™ Ä‘iá»ƒm áº£nh cao nháº¥t, Ä‘á»“ng nghÄ©a vá»›i viá»‡c sá»Ÿ há»¯u m&agrave;n h&igrave;nh sáº¯c n&eacute;t nháº¥t.</p>', 12),
+(48, 'Iphone Xs 256GB', 'IP02', 34990000, 'xs.png', '19', '<h2 style=\"box-sizing: border-box; margin: 10px 0px; padding: 0px; border: 0px; font-size: 20px; font-weight: normal; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\">iPhone Xs 256GB&nbsp;m&agrave;n h&igrave;nh OLED HDR chuáº©n Super Retina si&ecirc;u sáº¯c n&eacute;t</strong></h2>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">M&agrave;n h&igrave;nh iPhone Xs c&oacute; k&iacute;ch thÆ°á»›c 5,8 inch, Ä‘Æ°á»£c l&agrave;m tá»« táº¥m ná»n OLED c&ocirc;ng nghá»‡ ti&ecirc;n tiáº¿n nháº¥t hiá»‡n nay, há»— trá»£ hiá»ƒn thá»‹ HDR. HDR mang Ä‘áº¿n m&agrave;u sáº¯c ch&iacute;nh x&aacute;c, m&agrave;u Ä‘en c&oacute; chiá»u s&acirc;u, Ä‘á»™ s&aacute;ng v&agrave; Ä‘á»™ tÆ°Æ¡ng pháº£i tuyá»‡t vá»i. iPhone Xs ch&iacute;nh l&agrave; sáº£n pháº©m Apple c&oacute; máº­t Ä‘á»™ Ä‘iá»ƒm áº£nh cao nháº¥t, Ä‘á»“ng nghÄ©a vá»›i viá»‡c sá»Ÿ há»¯u m&agrave;n h&igrave;nh sáº¯c n&eacute;t nháº¥t.</p>', 10),
 (50, 'Iphone X 64GB', 'IP04', 26990000, 'x.jpg', '19', '<p><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">iPhone X 64GB</strong><span style=\"color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">&nbsp;l&agrave; chiáº¿c smartphone Ä‘áº§u ti&ecirc;n Ä‘Æ°á»£c Apple Æ°u &aacute;i cho táº¥m ná»n m&agrave;n h&igrave;nh OLED, k&iacute;ch thÆ°á»›c 5.8 inch v&agrave; Ä‘á»™ ph&acirc;n giáº£i Ä‘áº¡t chuáº©n Super Retina HD, Äiá»u n&agrave;y gi&uacute;p cho m&agrave;n h&igrave;nh c&oacute; m&agrave;u sáº¯c sá»‘ng Ä‘á»™ng, g&oacute;c nh&igrave;n rá»™ng hÆ¡n, cáº£i thiá»‡n Ä‘á»™ s&aacute;ng v&agrave; tá»‘n &iacute;t Ä‘iá»‡n nÄƒng hÆ¡n. B&ecirc;n cáº¡nh Ä‘&oacute;, c&ocirc;ng nghá»‡ True Tone c&ograve;n gi&uacute;p m&agrave;u sáº¯c trá»Ÿ n&ecirc;n cá»±c k&igrave; trung thá»±c</span></p>', 13),
-(51, 'Iphone 8 64GB', 'IP05', 20990000, '636748771945393060_iPhone-Xs-Max-gold.png', '19', '<p><strong>iPhone 8 Plus 64Gb</strong><span style=\"color:#333333; font-family:Arial,Helvetica,sans-serif; font-size:16px\">&nbsp;Ä‘&atilde; thay Ä‘á»•i vá» máº·t thiáº¿t káº¿ so vá»›i nhá»¯ng Ä‘á»i iPhone cÅ©: máº·t sau Ä‘&atilde; chuyá»ƒn sang cháº¥t liá»‡u k&iacute;nh bo cong 2.5D Ä‘áº¹p máº¯t hÆ¡n, loáº¡i bá» viá»n Äƒng-ten, bá»™ khung kim loáº¡i cá»©ng c&aacute;p hÆ¡n c&ugrave;ng vá»›i 7 lá»›p xá»­ l&yacute; m&agrave;u tÄƒng máº¡nh kháº£ nÄƒng chá»‘ng tráº§y xÆ°á»›c. Nh&igrave;n tá»•ng thá»ƒ th&igrave; kh&ocirc;ng c&oacute; nhiá»u thay Ä‘á»•i so vá»›i iPhone 7 Plus nhÆ°ng</span><strong>&nbsp;iPhone 8 Plus 64Gb</strong><span style=\"color:#333333; font-family:Arial,Helvetica,sans-serif; font-size:16px\">&nbsp;láº¡i mang Ä‘áº¿n cáº£m gi&aacute;c tinh táº¿ sang trá»ng hÆ¡n ráº¥t nhiá»u.</span></p>\r\n', 14),
+(51, 'Iphone 8 64GB', 'IP05', 20990000, '636748771945393060_iPhone-Xs-Max-gold.png', '19', '<p><strong>iPhone 8 Plus 64Gb</strong><span style=\"color:#333333; font-family:Arial,Helvetica,sans-serif; font-size:16px\">&nbsp;Ä‘&atilde; thay Ä‘á»•i vá» máº·t thiáº¿t káº¿ so vá»›i nhá»¯ng Ä‘á»i iPhone cÅ©: máº·t sau Ä‘&atilde; chuyá»ƒn sang cháº¥t liá»‡u k&iacute;nh bo cong 2.5D Ä‘áº¹p máº¯t hÆ¡n, loáº¡i bá» viá»n Äƒng-ten, bá»™ khung kim loáº¡i cá»©ng c&aacute;p hÆ¡n c&ugrave;ng vá»›i 7 lá»›p xá»­ l&yacute; m&agrave;u tÄƒng máº¡nh kháº£ nÄƒng chá»‘ng tráº§y xÆ°á»›c. Nh&igrave;n tá»•ng thá»ƒ th&igrave; kh&ocirc;ng c&oacute; nhiá»u thay Ä‘á»•i so vá»›i iPhone 7 Plus nhÆ°ng</span><strong>&nbsp;iPhone 8 Plus 64Gb</strong><span style=\"color:#333333; font-family:Arial,Helvetica,sans-serif; font-size:16px\">&nbsp;láº¡i mang Ä‘áº¿n cáº£m gi&aacute;c tinh táº¿ sang trá»ng hÆ¡n ráº¥t nhiá»u.</span></p>\r\n', 13),
 (53, 'Iphone 6 Plus 32GB', 'IP07', 123456, '636748771945393060_iPhone-Xs-Max-gold.png', '19', '<p><strong><span style=\"font-family:arial,helvetica,sans-serif\"><a href=\"https://fptshop.com.vn/dien-thoai/iphone-7-Plus\" rel=\"noopener\" style=\"box-sizing: border-box; margin: 0px; padding: 0px; vertical-align: baseline; background: transparent; outline: none; text-decoration-line: none; color: #18487a;\" target=\"_blank\">iPhone 7 Plus</a>&nbsp;dÆ°á»ng nhÆ° l&agrave; sáº£n pháº©m Ä‘Æ°á»£c Apple chÄƒm ch&uacute;t Ä‘á»ƒ vÆ°á»£t xa iPhone 7, trá»Ÿ th&agrave;nh sáº£n pháº©m ráº¥t Ä‘&aacute;ng Ä‘á»ƒ n&acirc;ng cáº¥p so vá»›i iPhone 6s Plus khi Ä‘Æ°á»£c n&acirc;ng cáº¥p th&ecirc;m camera k&eacute;p c&ugrave;ng chá»©c nÄƒng chá»¥p ch&acirc;n dung xo&aacute; ph&ocirc;ng cá»±c &quot;hot&quot;. Kh&ocirc;ng chá»‰ váº­y, n&acirc;ng cáº¥p Ä‘&aacute;ng gi&aacute; kh&aacute;c nhÆ° tá»‘c Ä‘á»™ xá»­ l&yacute; nhanh hÆ¡n, chá»‘ng nÆ°á»›c, bá»¥i, loa ngo&agrave;i sá»‘ng Ä‘á»™ng... Táº¥t cáº£ Ä‘&atilde; táº¡o n&ecirc;n má»™t sáº£n pháº©m h&agrave;ng Ä‘áº§u tuyá»‡t vá»i.</span></strong></p>\r\n', 1234),
-(55, 'Iphone 6 32GB (2017)', 'IP09', 9990000, '636748771945393060_iPhone-Xs-Max-gold.png', '19', '<p><strong>Apple iPhone 6s Plus&nbsp;</strong><span style=\"color:#333333; font-family:arial,helvetica,sans-serif; font-size:16px\">l&agrave; chiáº¿c iPhone m&agrave;n h&igrave;nh lá»›n nháº¥t, cho ph&eacute;p ngÆ°á»i d&ugrave;ng l&agrave;m Ä‘Æ°á»£c nhiá»u viá»‡c hÆ¡n tr&ecirc;n kh&ocirc;ng gian rá»™ng lá»›n. Ngo&agrave;i ra, nhá»¯ng t&iacute;nh nÄƒng má»›i nhÆ° há»‡ Ä‘iá»u h&agrave;nh iOS 10, 3D Touch, Live Photos hay camera 12MP xuáº¥t sáº¯c sáº½ mang Ä‘áº¿n sá»± h&agrave;i l&ograve;ng nháº¥t cho báº¡n khi sá»­ dá»¥ng má»™t chiáº¿c smartphone thá»±c sá»± cao cáº¥p.</span></p>\r\n', 12),
+(55, 'Iphone 6 32GB (2017)', 'IP09', 9990000, '636748771945393060_iPhone-Xs-Max-gold.png', '19', '<p><strong>Apple iPhone 6s Plus&nbsp;</strong><span style=\"color:#333333; font-family:arial,helvetica,sans-serif; font-size:16px\">l&agrave; chiáº¿c iPhone m&agrave;n h&igrave;nh lá»›n nháº¥t, cho ph&eacute;p ngÆ°á»i d&ugrave;ng l&agrave;m Ä‘Æ°á»£c nhiá»u viá»‡c hÆ¡n tr&ecirc;n kh&ocirc;ng gian rá»™ng lá»›n. Ngo&agrave;i ra, nhá»¯ng t&iacute;nh nÄƒng má»›i nhÆ° há»‡ Ä‘iá»u h&agrave;nh iOS 10, 3D Touch, Live Photos hay camera 12MP xuáº¥t sáº¯c sáº½ mang Ä‘áº¿n sá»± h&agrave;i l&ograve;ng nháº¥t cho báº¡n khi sá»­ dá»¥ng má»™t chiáº¿c smartphone thá»±c sá»± cao cáº¥p.</span></p>\r\n', 11),
 (56, 'Iphone 7 32GB', 'IP10', 12990000, '636748771945393060_iPhone-Xs-Max-gold.png', '19', '<p><strong>Apple iPhone 7&nbsp;</strong><span style=\"color:#333333; font-family:arial,helvetica,sans-serif; font-size:16px\">l&agrave; chiáº¿c iPhone m&agrave;n h&igrave;nh lá»›n nháº¥t, cho ph&eacute;p ngÆ°á»i d&ugrave;ng l&agrave;m Ä‘Æ°á»£c nhiá»u viá»‡c hÆ¡n tr&ecirc;n kh&ocirc;ng gian rá»™ng lá»›n. Ngo&agrave;i ra, nhá»¯ng t&iacute;nh nÄƒng má»›i nhÆ° há»‡ Ä‘iá»u h&agrave;nh iOS 10, 3D Touch, Live Photos hay camera 12MP xuáº¥t sáº¯c sáº½ mang Ä‘áº¿n sá»± h&agrave;i l&ograve;ng nháº¥t cho báº¡n khi sá»­ dá»¥ng má»™t chiáº¿c smartphone thá»±c sá»± cao cáº¥p.</span></p>\r\n', 12),
 (57, 'Oppo F7', 'OP01', 6990000, '636748771945393060_iPhone-Xs-Max-gold.png', '19', '<p><strong>OPPO F7</strong><span style=\"color:#333333; font-family:arial,helvetica,sans-serif; font-size:16px\">&nbsp;c&oacute; máº·t sau báº¯t máº¯t nhá» máº·t lÆ°ng k&iacute;nh táº¡o n&ecirc;n sá»± biáº¿n Ä‘á»•i &aacute;nh s&aacute;ng tá»« nhá»¯ng g&oacute;c nh&igrave;n kh&aacute;c nhau. Máº·t lÆ°ng cá»§a&nbsp;</span><strong>OPPO F7</strong><span style=\"color:#333333; font-family:arial,helvetica,sans-serif; font-size:16px\">&nbsp;vá»›i c&aacute;c g&oacute;c cáº¡nh Ä‘Æ°á»£c bo cong cÅ©ng sáº½ gi&uacute;p cho m&aacute;y &ocirc;m tay khi sá»­ dá»¥ng. Äá»“ng thá»i, pháº§n khung kim loáº¡i Ä‘Æ°á»£c gia c&ocirc;ng v&agrave; ho&agrave;n thiá»‡n tá»‰ má»‰, to&aacute;t l&ecirc;n má»™t váº» Ä‘áº¹p ráº¥t sang trá»ng.&nbsp;</span></p>\r\n', 0),
 (58, 'Oppo A7 6GB', 'OP02', 5990000, '636748771945393060_iPhone-Xs-Max-gold.png', '19', '<p>M&agrave;n h&igrave;nh giá»t nÆ°á»›c</p>\r\n\r\n<p>Láº¥y cáº£m há»©ng tá»« thi&ecirc;n nhi&ecirc;n</p>\r\n\r\n<p>OPPO A7 sá»Ÿ há»¯u thiáº¿t káº¿ m&agrave;n h&igrave;nh giá»t nÆ°á»›c áº¥n tÆ°á»£ng, láº¥y cáº£m há»©ng tá»« h&igrave;nh áº£nh giá»t nÆ°á»›c Ä‘ang rÆ¡i trong tá»± nhi&ecirc;n. K&iacute;nh Corning glass vá»›i tá»· lá»‡ m&agrave;n h&igrave;nh 88,4% chá»‘ng tráº§y xÆ°á»›c v&agrave; mang láº¡i tráº£i nghiá»‡m h&igrave;nh áº£nh sá»‘ng Ä‘á»™ng hÆ¡n.</p>\r\n', 12),
@@ -223,27 +192,27 @@ INSERT INTO `tbl_product` (`id`, `name`, `masp`, `price`, `image`, `category`, `
 (75, 'SamSung Galaxy S9 128GB', 'SS10', 24490000, 'S9 128.png', '20', '<p><span style=\"color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">M&agrave;n h&igrave;nh 6.2 inch tr&ecirc;n&nbsp;</span><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">Samsung&nbsp;Galaxy S9+ 128 GB</strong><span style=\"color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">&nbsp;c&oacute; Ä‘á»™ ph&acirc;n giáº£i 2K+, sá»­ dá»¥ng táº¥m ná»n Super AMOLED há»— trá»£ HDR. Má»i chi tiáº¿t tr&ecirc;n h&igrave;nh áº£nh hay video Ä‘á»u Ä‘Æ°á»£c t&aacute;i táº¡o sáº¯c n&eacute;t vá»›i m&agrave;u sáº¯c trung thá»±c, sá»‘ng Ä‘á»™ng nhÆ° Ä‘ang nh&igrave;n tháº¥y ngay trÆ°á»›c máº¯t. Ngo&agrave;i ra&nbsp;</span><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">Galaxy S9+ 128 GB</strong><span style=\"color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">&nbsp;t&iacute;ch há»£p chuáº©n kh&aacute;ng bá»¥i &ndash; kh&aacute;ng nÆ°á»›c IP68, gi&uacute;p báº¡n thoáº£i m&aacute;i nghe nháº¡c b&ecirc;n há»“ bÆ¡i, nháº­n cuá»™c gá»i giá»¯a trá»i mÆ°a v&agrave; y&ecirc;n t&acirc;m khi cháº³ng may l&agrave;m rÆ¡i m&aacute;y xuá»‘ng nÆ°á»›c.</span></p>', 0),
 (76, 'SamSung Galaxy S9+', 'SS11', 24490000, 's9 128+.png', '20', '<p><span style=\"color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">M&agrave;n h&igrave;nh 6.2 inch tr&ecirc;n&nbsp;</span><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">Samsung&nbsp;Galaxy S9+ 128 GB</strong><span style=\"color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">&nbsp;c&oacute; Ä‘á»™ ph&acirc;n giáº£i 2K+, sá»­ dá»¥ng táº¥m ná»n Super AMOLED há»— trá»£ HDR. Má»i chi tiáº¿t tr&ecirc;n h&igrave;nh áº£nh hay video Ä‘á»u Ä‘Æ°á»£c t&aacute;i táº¡o sáº¯c n&eacute;t vá»›i m&agrave;u sáº¯c trung thá»±c, sá»‘ng Ä‘á»™ng nhÆ° Ä‘ang nh&igrave;n tháº¥y ngay trÆ°á»›c máº¯t. Ngo&agrave;i ra&nbsp;</span><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">Galaxy S9+ 128 GB</strong><span style=\"color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify;\">&nbsp;t&iacute;ch há»£p chuáº©n kh&aacute;ng bá»¥i &ndash; kh&aacute;ng nÆ°á»›c IP68, gi&uacute;p báº¡n thoáº£i m&aacute;i nghe nháº¡c b&ecirc;n há»“ bÆ¡i, nháº­n cuá»™c gá»i giá»¯a trá»i mÆ°a v&agrave; y&ecirc;n t&acirc;m khi cháº³ng may l&agrave;m rÆ¡i m&aacute;y xuá»‘ng nÆ°á»›c.</span></p>', 0),
 (77, 'Nokia 7 Plus', 'NO01', 8240000, '7 plus.png', '23', '<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Thiáº¿t káº¿ Nokia 7 Plus h&ograve;a theo xu tháº¿ cá»§a thá»i Ä‘áº¡i vá»›i m&agrave;n h&igrave;nh tá»· lá»‡ 18:9 tr&agrave;n viá»n gi&uacute;p th&acirc;n m&aacute;y kh&ocirc;ng qu&aacute; to cho cáº£m gi&aacute;c cáº§m náº¯m dá»… chá»‹u, c&ograve;n pháº§n khung Ä‘Æ°á»£c l&agrave;m tá»« nh&ocirc;m tÄƒng th&ecirc;m t&iacute;nh sang trá»ng. Äáº·c biá»‡t, khi táº¯t m&aacute;y, pháº§n viá»n v&agrave; m&agrave;n h&igrave;nh nhÆ° h&ograve;a v&agrave;o c&ugrave;ng nhau, táº¡o n&ecirc;n má»™t khá»‘i liá»n máº¡ch á»Ÿ máº·t trÆ°á»›c, mang láº¡i má»™t váº» Ä‘áº¹p quyáº¿n rÅ©.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">&nbsp;</p>', 0),
-(78, 'Nokia 6', 'NO02', 2990000, '6.png', '19', '<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\"><a style=\"box-sizing: border-box; margin: 0px; padding: 0px; vertical-align: baseline; background: transparent; outline: none; text-decoration-line: none; color: #18487a;\" href=\"https://fptshop.com.vn/dien-thoai/nokia-6\" target=\"_blank\" rel=\"noopener\"><span style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent; color: #0000cd;\">Nokia 6</span></a>&nbsp;l&agrave; má»™t trong nhá»¯ng sáº£n pháº©m má»›i Ä‘Æ°á»£c HMD Global giá»›i thiá»‡u Ä‘áº¿n ngÆ°á»i d&ugrave;ng trong nÄƒm 2017 n&agrave;y. M&aacute;y sá»Ÿ há»¯u thiáº¿t káº¿ áº¥n tÆ°á»£ng, cháº¥t lÆ°á»£ng hiá»ƒn thá»‹ tá»‘t vá»›i m&agrave;n h&igrave;nh cáº£m á»©ng 5.5 inch, cáº¥u h&igrave;nh táº§m trung á»•n Ä‘á»‹nh, há»‡ thá»‘ng camera sáº¯c n&eacute;t v&agrave; nhiá»u t&iacute;nh nÄƒng vÆ°á»£t trá»™i kh&aacute;c, há»©a háº¹n sáº½ Ä‘em Ä‘áº¿n cho ngÆ°á»i d&ugrave;ng nhá»¯ng tráº£i nghiá»‡m tuyá»‡t vá»›i nháº¥t vá»›i Nokia 6.</strong></p>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">&nbsp;</p>', 0);
-INSERT INTO `tbl_product` (`id`, `name`, `masp`, `price`, `image`, `category`, `chitiet`, `soluong`) VALUES
+(78, 'Nokia 6', 'NO02', 2990000, '6.png', '19', '<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\"><a style=\"box-sizing: border-box; margin: 0px; padding: 0px; vertical-align: baseline; background: transparent; outline: none; text-decoration-line: none; color: #18487a;\" href=\"https://fptshop.com.vn/dien-thoai/nokia-6\" target=\"_blank\" rel=\"noopener\"><span style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent; color: #0000cd;\">Nokia 6</span></a>&nbsp;l&agrave; má»™t trong nhá»¯ng sáº£n pháº©m má»›i Ä‘Æ°á»£c HMD Global giá»›i thiá»‡u Ä‘áº¿n ngÆ°á»i d&ugrave;ng trong nÄƒm 2017 n&agrave;y. M&aacute;y sá»Ÿ há»¯u thiáº¿t káº¿ áº¥n tÆ°á»£ng, cháº¥t lÆ°á»£ng hiá»ƒn thá»‹ tá»‘t vá»›i m&agrave;n h&igrave;nh cáº£m á»©ng 5.5 inch, cáº¥u h&igrave;nh táº§m trung á»•n Ä‘á»‹nh, há»‡ thá»‘ng camera sáº¯c n&eacute;t v&agrave; nhiá»u t&iacute;nh nÄƒng vÆ°á»£t trá»™i kh&aacute;c, há»©a háº¹n sáº½ Ä‘em Ä‘áº¿n cho ngÆ°á»i d&ugrave;ng nhá»¯ng tráº£i nghiá»‡m tuyá»‡t vá»›i nháº¥t vá»›i Nokia 6.</strong></p>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">&nbsp;</p>', 0),
 (80, 'Nokia 6 32GB', 'NO04', 4890000, '6 32.png', '23', '<h3 style=\"box-sizing: border-box; margin: 10px 0px; padding: 0px; border: 0px; font-size: 20px; font-weight: normal; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\">Sá»©c máº¡nh pháº§n cá»©ng áº¥n tÆ°á»£ng</strong></h3>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Nokia 6 má»›i Ä‘Æ°á»£c trang bá»‹ bá»™ vi xá»­ l&yacute; Snapdragon 630 má»›i cá»±c máº¡nh v&agrave; tiáº¿t kiá»‡m nÄƒng lÆ°á»£ng. Con chip n&agrave;y gi&uacute;p m&aacute;y xá»­ l&yacute; mÆ°á»£t m&agrave; v&agrave; chÆ¡i tá»‘t táº¥t cáº£ nhá»¯ng game náº·ng hiá»‡n nay. Äi c&ugrave;ng vá»›i Ä‘&oacute; l&agrave; 3GB RAM v&agrave; 32GB bá»™ nhá»› trong, Ä‘á»§ Ä‘á»ƒ báº¡n cháº¡y Ä‘a nhiá»‡m cÅ©ng nhÆ° lÆ°u trá»¯ má»i dá»¯ liá»‡u cáº§n thiáº¿t. Hiá»‡u nÄƒng Nokia 6 2018 máº¡nh hÆ¡n tá»›i 60% so vá»›i chiáº¿c Nokia 6 cÅ©.</p>', 0),
 (81, 'Nokia 5.1 Plus', 'NO05', 4790000, '5.1 plus.png', '23', '<h2 style=\"box-sizing: border-box; margin: 10px 0px; padding: 0px; border: 0px; font-size: 20px; font-weight: normal; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\">Cáº£m nháº­n má»i thá»© ch&acirc;n thá»±c hÆ¡n</strong></h2>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif;\">&nbsp;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Báº¥t cá»© khi n&agrave;o xem phim, chÆ¡i game hay nháº¯n tin vá»›i báº¡n b&egrave;, m&agrave;n h&igrave;nh lá»›n 5,8 inch Ä‘á»™ ph&acirc;n giáº£i HD+ tr&ecirc;n Nokia 5.1 Plus Ä‘á»u mang Ä‘áº¿n cáº£m gi&aacute;c th&iacute;ch th&uacute;. M&agrave;n h&igrave;nh thiáº¿t káº¿ tr&agrave;n cáº¡nh, tá»‰ lá»‡ chuáº©n Ä‘iá»‡n áº£nh 19:9 cho tráº£i nghiá»‡m h&igrave;nh áº£nh Ä‘áº§y kh&aacute;c biá»‡t. Nhá»¯ng bá»™ phim hay c&aacute;c tá»±a game h&agrave;nh Ä‘á»™ng sáº½ trá»Ÿ n&ecirc;n háº¥p dáº«n hÆ¡n bao giá» háº¿t.</p>', 0),
 (82, 'Nokia 3', 'NO06', 1990000, '3.png', '23', '<h2 style=\"box-sizing: border-box; margin: 10px 0px; padding: 0px; border: 0px; font-size: 20px; font-weight: normal; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><span style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\"><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\">Thiáº¿t káº¿ thá»i trang</strong></span></h2>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">&nbsp;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Äiá»‡n thoáº¡i Nokia 3 Ä‘Æ°á»£c cháº¿ táº¡o tá»« nhá»±a polycarbonate káº¿t há»£p vá»›i khung nh&ocirc;m 6000 series cá»©ng c&aacute;p táº¡o n&ecirc;n sá»± Ä‘á»™c Ä‘&aacute;o trong thiáº¿t káº¿ v&agrave; cho ngÆ°á»i d&ugrave;ng cáº£m gi&aacute;c th&acirc;n thiá»‡n hÆ¡n. Äá»“ng thá»i, m&aacute;y cÅ©ng c&oacute; cháº¥t lÆ°á»£ng ho&agrave;n thiá»‡n ráº¥t tá»‘t, cho cáº£m gi&aacute;c cáº§m cháº¯c cháº¯n. Máº·t trÆ°á»›c Ä‘Æ°á»£c thiáº¿t káº¿ c&acirc;n Ä‘á»‘i, nhá»¯ng chi tiáº¿t nhÆ° logo Nokia hay 3 ph&iacute;m Ä‘iá»u hÆ°á»›ng Ä‘á»u Ä‘Æ°á»£c thiáº¿t káº¿ Ä‘áº¹p v&agrave; tinh táº¿.</p>', 0),
-(83, 'Nokia 3.1 Plus', 'NO07', 2890000, '3.1 plus.png', '23', '<h2 style=\"box-sizing: border-box; margin: 10px 0px; padding: 0px; border: 0px; font-size: 20px; font-weight: normal; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\">Kiá»ƒu d&aacute;ng thanh lá»‹ch v&agrave; tinh táº¿</strong></h2>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif;\">&nbsp;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Xuáº¥t hiá»‡n vá»›i thiáº¿t káº¿ dáº¡ng thanh quen thuá»™c, nhÆ°ng Nokia 3.1 láº¡i ráº¥t thu h&uacute;t nhá» c&aacute;c Ä‘Æ°á»ng cong tinh táº¿, khung viá»n kim loáº¡i cháº¯c cháº¯n v&agrave; c&aacute;c Ä‘Æ°á»ng cáº¯t kim cÆ°Æ¡ng sáº¯c sáº£o. Pháº§n náº¯p lÆ°ng m&aacute;y Ä‘Æ°á»£c l&agrave;m tá»« nhá»±a Polycarbonate cao cáº¥p cá»±c bá»n v&agrave; cho cáº£m gi&aacute;c cáº§m náº¯m cháº¯c cháº¯n. Trong khi Ä‘&oacute; pháº§n m&agrave;n h&igrave;nh máº·t trÆ°á»›c cÅ©ng Ä‘Æ°á»£c v&aacute;t cong v&agrave; báº£o vá»‡ báº±ng k&iacute;nh cÆ°á»ng lá»±c Gorilla Glass 3 Ä‘á»ƒ táº¡o ra sá»± liá»n khá»‘i vá»¯ng cháº¯c, Ä‘áº§y tinh táº¿.</p>', 0),
+(83, 'Nokia 3.1 Plus', 'NO07', 2890000, '3.1 plus.png', '23', '<h2 style=\"box-sizing: border-box; margin: 10px 0px; padding: 0px; border: 0px; font-size: 20px; font-weight: normal; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\">Kiá»ƒu d&aacute;ng thanh lá»‹ch v&agrave; tinh táº¿</strong></h2>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif;\">&nbsp;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Xuáº¥t hiá»‡n vá»›i thiáº¿t káº¿ dáº¡ng thanh quen thuá»™c, nhÆ°ng Nokia 3.1 láº¡i ráº¥t thu h&uacute;t nhá» c&aacute;c Ä‘Æ°á»ng cong tinh táº¿, khung viá»n kim loáº¡i cháº¯c cháº¯n v&agrave; c&aacute;c Ä‘Æ°á»ng cáº¯t kim cÆ°Æ¡ng sáº¯c sáº£o. Pháº§n náº¯p lÆ°ng m&aacute;y Ä‘Æ°á»£c l&agrave;m tá»« nhá»±a Polycarbonate cao cáº¥p cá»±c bá»n v&agrave; cho cáº£m gi&aacute;c cáº§m náº¯m cháº¯c cháº¯n. Trong khi Ä‘&oacute; pháº§n m&agrave;n h&igrave;nh máº·t trÆ°á»›c cÅ©ng Ä‘Æ°á»£c v&aacute;t cong v&agrave; báº£o vá»‡ báº±ng k&iacute;nh cÆ°á»ng lá»±c Gorilla Glass 3 Ä‘á»ƒ táº¡o ra sá»± liá»n khá»‘i vá»¯ng cháº¯c, Ä‘áº§y tinh táº¿.</p>', 0);
+INSERT INTO `tbl_product` (`id`, `name`, `masp`, `price`, `image`, `category`, `chitiet`, `soluong`) VALUES
 (84, 'Nokia 2', 'NO08', 1790000, '2.png', '23', '<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Tá»±a nhÆ° nhá»¯ng ngÆ°á»i Ä‘&agrave;n anh Ä‘i trÆ°á»›c, Ä‘iá»‡n thoáº¡i Nokia 2 cÅ©ng sá»Ÿ há»¯u thiáº¿t káº¿ sang trá»ng vá»›i pháº§n khung nh&ocirc;m 6000 series Ä‘em láº¡i cáº£m gi&aacute;c ráº¥t cá»©ng c&aacute;p. Máº·t lÆ°ng nhá»±a c&oacute; thá»ƒ th&aacute;o rá»i Ä‘Æ°á»£c, máº·t trÆ°á»›c Nokia 2 Ä‘Æ°á»£c báº£o vá»‡ bá»Ÿi k&iacute;nh cÆ°á»ng lá»±c Corning Gorilla 3 gi&uacute;p ngÆ°á»i d&ugrave;ng cáº£m tháº¥y y&ecirc;n t&acirc;m hÆ¡n trong qu&aacute; tr&igrave;nh sá»­ dá»¥ng.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Äiá»u tuyá»‡t vá»i hÆ¡n l&agrave; Nokia 2 c&ograve;n t&iacute;ch há»£p th&ecirc;m kháº£ nÄƒng kh&aacute;ng nÆ°á»›c ti&ecirc;u chuáº©n IP52 gi&uacute;p ngÆ°á»i d&ugrave;ng c&agrave;ng th&ecirc;m y&ecirc;n t&acirc;m sá»­ dá»¥ng báº¥t cháº¥p thá»i tiáº¿t.</p>', 0),
 (85, 'Nokia 2.1', 'NO09', 2590000, '2.1.png', '23', '<h2 style=\"box-sizing: border-box; margin: 10px 0px; padding: 0px; border: 0px; font-size: 20px; font-weight: normal; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><span style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\"><strong style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; background: transparent;\">M&agrave;n h&igrave;nh lá»›n, tráº£i nghiá»‡m nhiá»u hÆ¡n</strong></span></h2>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif;\">&nbsp;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-size: 16px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: #333333; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Nokia 2.1 má»›i mang Ä‘áº¿n cho báº¡n tráº£i nghiá»‡m xem nhiá»u hÆ¡n vá»›i m&agrave;n h&igrave;nh lá»›n 5,5 inch chuáº©n HD. Má»i ná»™i dung m&agrave; báº¡n y&ecirc;u th&iacute;ch Ä‘á»u Ä‘Æ°á»£c hiá»ƒn thá»‹ sá»‘ng Ä‘á»™ng, r&otilde; n&eacute;t v&agrave; trá»±c quan nhá» m&agrave;n h&igrave;nh ráº¥t lá»›n. D&ugrave; l&agrave; c&ocirc;ng viá»‡c hay giáº£i tr&iacute; th&igrave; kh&ocirc;ng gian rá»™ng lá»›n cÅ©ng gi&uacute;p báº¡n l&agrave;m má»i thá»© dá»… d&agrave;ng hÆ¡n.</p>', 0),
 (90, 'Iphone Xr 256GB', '12', 16990000, 'xr.png', '19', '<p>aaaaaaaaaaa</p>\r\n', 0),
 (91, 'Iphone Xr 256GB', '12', 12346800, 'xr.png', '19', '<p>ccccccccccc</p>\r\n', 0),
-(92, 'Vu Minh Quang', '12', 12346800, '', '19', '<p>aaaa</p>\r\n', 20),
 (93, 'Quang', '1', 12346800, '636614732659385631_iphone--8-red-1.png', '20', '<p>ccc</p>\r\n', 111),
 (94, 'Nokia 3.1 Plus', '123', 2390000, '2.1.png', '24', '<p>11111111aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&acirc;</p>\r\n', 12),
 (95, 'SamSung Galaxy A6', '124', 1290000, 'A6+.png', '24', '<p>&acirc;cfaaaaaaaaaaaaaaa</p>\r\n', 20),
 (96, 'SamSung Galaxy A8', '125', 7990000, 'A8.jpg', '24', '<p>gfggggggggggggggggg</p>\r\n', 20),
-(97, 'df', 'e34', 2345, 'A7.jpg', '19', '<p>sdds</p>\r\n', 0);
+(98, 'iphoneX 512GB', 'IP20', 35000000, 'ipx.jpg', '19', '<h2><strong>Mua Ä‘iá»‡n thoáº¡i&nbsp;Apple iPhone Xs Max - 64GB (1 SIM) - LL/A ch&iacute;nh h&atilde;ng, gi&aacute; ráº» táº¡i Ho&agrave;ng H&agrave; Mobile</strong></h2>\r\n\r\n<p><strong>Sau nhiá»u ng&agrave;y chá» Ä‘á»£i th&igrave; cuá»‘i c&ugrave;ng&nbsp;<a href=\"https://hoanghamobile.com/apple-iphone-xs-max-64gb-1-sim-lla-p13448.html\">Ä‘iá»‡n thoáº¡i Apple iPhone Sx Max &ndash; 64GB (1SIM) &ndash; LL/A</a>&nbsp;cÅ©ng Ä‘&atilde; c&oacute; máº·t ch&iacute;nh thá»©c táº¡i thá»‹ trÆ°á»ng Viá»‡t Nam. Äáº·c biá»‡t, phi&ecirc;n báº£n chá»‰ c&oacute; má»©c gi&aacute; khoáº£ng 27 triá»‡u Ä‘á»“ng táº¡i Ho&agrave;ng H&agrave; Mobile &ndash; qu&aacute; &ldquo;thÆ¡m&rdquo; d&agrave;nh cho nhá»¯ng ngÆ°á»i d&ugrave;ng Ä‘ang muá»‘n sá»Ÿ há»¯u iPhone Xs Max.</strong></p>\r\n', 10),
+(99, 'iphoneX 512GB', 'IP20', 35000000, 'ipx.jpg', '19', '<h3><strong>1. Thiáº¿t káº¿ kh&ocirc;ng láº«n v&agrave;o Ä‘&acirc;u cá»§a iPhone Xs Max</strong></h3>\r\n\r\n<p>Apple kh&ocirc;ng pháº£i l&agrave; nh&agrave; sáº£n xuáº¥t c&oacute; nhiá»u sá»± s&aacute;ng táº¡o trong thiáº¿t káº¿ qua c&aacute;c Ä‘á»i smartphone. Tuy nhi&ecirc;n nhá»¯ng chiáº¿c iPhone m&agrave; h&atilde;ng n&agrave;y táº¡o ra váº«n lu&ocirc;n c&oacute; má»™t n&eacute;t ri&ecirc;ng trong thiáº¿t káº¿ m&agrave; chá»‰ cáº§n nh&igrave;n sÆ¡ qua l&agrave; ch&uacute;ng ta Ä‘&atilde; biáº¿t Ä‘&oacute; l&agrave; iPhone.</p>\r\n\r\n<p><img alt=\"mua iPhone Xs Max 1 SIM\" src=\"https://hoanghamobile.com/Uploads/Originals/2018/11/15/201811151646433064_iPhone-Xs-Max-1-sim.png\" /></p>\r\n\r\n<p>Váº» ngo&agrave;i sang trá»ng cá»§a iPhone Xs Max</p>\r\n\r\n<p>ÄÆ°á»£c thá»«a hÆ°á»Ÿng tá»« thiáº¿t káº¿ cá»§a&nbsp;<a href=\"https://hoanghamobile.com/iphone-x-c2282.html\"><strong>iPhone X</strong></a>, iPhone Xs Max váº«n giá»¯ máº·t sau l&agrave; k&iacute;nh cÆ°á»ng lá»±c sang trá»ng, hiá»‡n Ä‘áº¡i c&ugrave;ng logo quáº£ t&aacute;o ná»•i báº­t.</p>\r\n\r\n<p>Äiá»ƒm kh&aacute;c biá»‡t lá»›n nháº¥t l&agrave; k&iacute;ch thÆ°á»›c m&aacute;y. D&ugrave; sá»Ÿ há»¯u m&agrave;n h&igrave;nh l&ecirc;n tá»›i 6.5 inch nhÆ°ng tá»•ng thá»ƒ m&aacute;y láº¡i chá»‰ ngang báº±ng vá»›i k&iacute;ch thÆ°á»›c cá»§a d&ograve;ng Plus m&agrave; th&ocirc;i.</p>\r\n\r\n<h3><strong>2. M&agrave;n h&igrave;nh OLED vá»›i cháº¥t lÆ°á»£ng hiá»ƒn thá»‹ tuyá»‡t vá»i</strong></h3>\r\n\r\n<p>iPhone Xs Max &ndash; 64GB (1SIM)-LL/A Ä‘Æ°á»£c Apple trang bá»‹ m&agrave;n h&igrave;nh lá»›n vá»›i táº¥m ná»n OLED káº¿t há»£p c&ugrave;ng c&ocirc;ng nghá»‡ Super Retina mang láº¡i cháº¥t lÆ°á»£ng hiá»ƒn thá»‹ cá»±c ká»³ sá»‘ng Ä‘á»™ng v&agrave; r&otilde; n&eacute;t.</p>\r\n\r\n<p>B&ecirc;n cáº¡nh Ä‘&oacute;, m&aacute;y cÅ©ng Ä‘Æ°á»£c t&iacute;ch há»£p th&ecirc;m c&ocirc;ng nghá»‡ HDR10 c&ugrave;ng táº§n sá»‘ qu&eacute;t 120 Hz gi&uacute;p cháº¥t lÆ°á»£ng h&igrave;nh áº£nh mÆ°á»£t m&agrave;, Ä‘á»¡ bá»‹ noise.</p>\r\n', 10);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_product_sale`
+-- Cấu trúc bảng cho bảng `tbl_product_sale`
 --
 
 CREATE TABLE `tbl_product_sale` (
@@ -258,18 +227,16 @@ CREATE TABLE `tbl_product_sale` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_product_sale`
+-- Đang đổ dữ liệu cho bảng `tbl_product_sale`
 --
 
 INSERT INTO `tbl_product_sale` (`id`, `name`, `masp`, `price`, `image`, `category`, `chitiet`, `giamgia`) VALUES
-(18, 'Vu Minh Quang', '12', 12346800, '636614732659385631_iphone--8-red-1.png', '19', '<p>ccccc</p>\r\n', 2),
-(21, 'Vu Minh Quang', '1', 2, 'xr.png', '19', '<p>aa</p>\r\n', 2),
-(22, 'Iphone Xr 256GB', '1', 23990000, 'xr.png', '19', '<p>cccccccccccc</p>\r\n', 100);
+(1, 'iphoneX 512GB', 'IP21', 30000000, 'ipx.jpg', '19', '', 5);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_user`
+-- Cấu trúc bảng cho bảng `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -282,109 +249,110 @@ CREATE TABLE `tbl_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `tbl_user`
+-- Đang đổ dữ liệu cho bảng `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`username`, `name`, `email`, `phone`, `address`, `password`) VALUES
-('quangvu1998', 'Vũ Minh Quang', 'quangvm1998@gmail.com', '0358850515', 'Hà Nội', 'quangvu');
+('admin', 'admin', 'admin@gmail.com', '0969018211', 'tphcm', 'admin'),
+('quangkhai', 'Đặng Viết Quang Khải', 'quangkhai897@gmail.com', '0974560838', 'thành phố hồ chí minh', '170997');
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `banner`
+-- Chỉ mục cho bảng `banner`
 --
 ALTER TABLE `banner`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_category`
+-- Chỉ mục cho bảng `tbl_category`
 --
 ALTER TABLE `tbl_category`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_comment`
+-- Chỉ mục cho bảng `tbl_comment`
 --
 ALTER TABLE `tbl_comment`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_oder`
+-- Chỉ mục cho bảng `tbl_oder`
 --
 ALTER TABLE `tbl_oder`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_post`
+-- Chỉ mục cho bảng `tbl_post`
 --
 ALTER TABLE `tbl_post`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_product`
+-- Chỉ mục cho bảng `tbl_product`
 --
 ALTER TABLE `tbl_product`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_product_sale`
+-- Chỉ mục cho bảng `tbl_product_sale`
 --
 ALTER TABLE `tbl_product_sale`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_user`
+-- Chỉ mục cho bảng `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`username`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `banner`
+-- AUTO_INCREMENT cho bảng `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
--- AUTO_INCREMENT for table `tbl_category`
+-- AUTO_INCREMENT cho bảng `tbl_category`
 --
 ALTER TABLE `tbl_category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT for table `tbl_comment`
+-- AUTO_INCREMENT cho bảng `tbl_comment`
 --
 ALTER TABLE `tbl_comment`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
--- AUTO_INCREMENT for table `tbl_oder`
+-- AUTO_INCREMENT cho bảng `tbl_oder`
 --
 ALTER TABLE `tbl_oder`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
--- AUTO_INCREMENT for table `tbl_post`
+-- AUTO_INCREMENT cho bảng `tbl_post`
 --
 ALTER TABLE `tbl_post`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `tbl_product`
+-- AUTO_INCREMENT cho bảng `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
--- AUTO_INCREMENT for table `tbl_product_sale`
+-- AUTO_INCREMENT cho bảng `tbl_product_sale`
 --
 ALTER TABLE `tbl_product_sale`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

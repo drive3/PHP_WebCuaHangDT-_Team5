@@ -1,4 +1,4 @@
-            <div class="navbar nav_title" style="border: 0;"><a href="home.php" class="site_title"><i class="fa fa-paw"></i> <span>Team 5</span></a></div>
+            <div class="navbar nav_title" style="border: 0;"><a href="/PHP_WebCuaHangDT_Team5/admin/list_product.php" class="site_title"><i class="fa fa-paw"></i> <span>Team 5</span></a></div>
             <div class="clearfix"></div>
 
             <!-- menu profile quick info -->

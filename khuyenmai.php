@@ -35,7 +35,7 @@ include('header.php') ?>
         $sql= "SELECT * from tbl_product where category = 24 order by id asc limit $trang,8";
                                 $run = mysqli_query($conn, $sql);
                                 $i = 0;
-  while ($row = mysqli_fetch_array($run)) {
+          while ($row = mysqli_fetch_array($run)) {
                                   $i++;
                                   ;?>
      
@@ -60,20 +60,20 @@ include('header.php') ?>
       
     </div>
     <?php
-  $sql_trang = "select * from tbl_product";
-  $run_trang = mysqli_query($conn,$sql_trang);
-  $sosach = mysqli_num_rows($run_trang);
-  $sotrang = ceil($sosach/8);
-  if ($sotrang == 0){
-    echo ' Không có sách nào!';
-  }
-  else{
-    echo ' Trang:';
-  }
-  for($b=1;$b<=$sotrang;$b++){
-    echo '<a href="?trang='.$b.'" style="text-decoration:none">'.' '.$b.' '.'</a>';
-  }
-?>
+        $sql_trang = "select * from tbl_product";
+        $run_trang = mysqli_query($conn,$sql_trang);
+        $sosach = mysqli_num_rows($run_trang);
+        $sotrang = ceil($sosach/8);
+        if ($sotrang == 0){
+          echo ' Không có sách nào!';
+        }
+        else{
+          echo ' Trang:';
+        }
+        for($b=1;$b<=$sotrang;$b++){
+          echo '<a href="?trang='.$b.'" style="text-decoration:none">'.' '.$b.' '.'</a>';
+        }
+      ?>
 <?php
   echo '</br>';
   if($get_trang >= 1){
@@ -84,11 +84,7 @@ include('header.php') ?>
   }
 ?>
     <div class="clear"></div>
-     
-    
-
   </section>
-   
 </div>
 
 <!-- <div class="wrapper row3">

@@ -4,8 +4,9 @@ include('header.php') ?>
 <?php
 include("config/dbconfig.php");
 $id = $_GET['id'];
-$thanhtien = $_GET['thanhtien'];
+
 $sql = "SELECT * from tbl_product where id=".$id;
+$thanhtien = $_GET['thanhtien'];
 $run = mysqli_query($conn, $sql);
 $i = 0;
 while ($row = mysqli_fetch_array($run)) {
@@ -80,7 +81,7 @@ while ($row = mysqli_fetch_array($run)) {
                             <tfoot>
                                 <input type="hidden" name="tongtien" value="<?php echo $thanhtien; ?>">
                                 <tr class="order-total">
-                                    <td>Tổng đơn hàng:</td>
+                                    <td>Tổng đơn hàng :</td>
                                     <td><strong class="total-price"><?php echo $thanhtien; ?></strong></td>
                                 </tr>
                                

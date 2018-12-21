@@ -41,7 +41,7 @@
             <div class="right_col" role="main">
               <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                  <h1>SẢN PHẨM</h1>
+                  <h1>Danh Sách Đơn Hàng</h1>
                   <div>
                     <p style="text-align: right;"><a href="add_product.php">Thêm mới <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></p>
                    
@@ -50,12 +50,11 @@
                                 <tr>
                                     <td><input type="checkbox" name="checkAll" id="checkAll"></td>
                                     <td><span class="thead-text">STT</span></td>
-                                    <td><span class="thead-text">Mã đơn hàng</span></td>
-                                    <td><span class="thead-text">Họ và tên</span></td>
-                                    <td><span class="thead-text">số sản phẩm</span></td>
+                                    <td><span class="thead-text">Mã Đơn Hàng</span></td>
+                                    <td><span class="thead-text">Tên Khách Hàng</span></td>
+                                  <!--   <td><span class="thead-text">số sản phẩm</span></td> -->
+                                    <td><span class="thead-text">Số Điện Thoại</span></td>
                                     <td><span class="thead-text">Tổng giá</span></td>
-                                  
-                                  
                                      <td><span class="thead-text">Chi tiết</span></td>
                                 </tr>
                             </thead>
@@ -64,18 +63,18 @@
                               // Bước 1: Kết nối đến CSDL
                                 include("../config/dbconfig.php");
                                 if(isset($_GET['trang'])){
-    $get_trang = $_GET['trang'];
-  }
-  else{
-    $get_trang = '';
-  }
-  if ($get_trang == '' || $get_trang == 1){
-    $trang = 0;
-  }
-  else
-  {
-    $trang = ($get_trang*9)-9;
-  }
+                                    $get_trang = $_GET['trang'];
+                                  }
+                                  else{
+                                    $get_trang = '';
+                                  }
+                                  if ($get_trang == '' || $get_trang == 1){
+                                    $trang = 0;
+                                  }
+                                  else
+                                  {
+                                    $trang = ($get_trang*9)-9;
+                                  }
 
                               //Bước 2: Hiển thị các dữ liệu trong bảng ra đây
                                 $sql = "select * from tbl_oder order by id asc limit $trang,9";
@@ -90,7 +89,7 @@
                                     <td><span class="tbody-text"><?php echo $row["id"];?></h3></span>
                                     <td><span class="tbody-text"><?php echo $row["tenkhachhang"];?></h3></span>
                                     <td>
-                                      <span class="tbody-text"><?php echo $row["soluong"];?></h3></span>
+                                      <span class="tbody-text"><?php echo $row["phone"];?></h3></span>
                                     </td>
                                     <td class="clearfix">
                                         <div class="tb-title fl-left">
@@ -108,42 +107,40 @@
                               ;?>
                             </tbody>
                             <?php
-  $sql_trang = "select * from tbl_oder";
-  $run_trang = mysqli_query($conn,$sql_trang);
-  $sosach = mysqli_num_rows($run_trang);
-  $sotrang = ceil($sosach/8);
-  if ($sotrang == 0){
-    echo ' Không có sách nào!';
-  }
-  else{
-    echo ' Trang:';
-  }
-  for($b=1;$b<=$sotrang;$b++){
-    echo '<a href="?trang='.$b.'" style="text-decoration:none">'.' '.$b.' '.'</a>';
-  }
-?>
-<?php
-  echo '</br>';
-  if($get_trang >= 1){
-    echo ' Trang hiện tại: '.$get_trang;
-  }
-    if($get_trang == '' && $sotrang >= 1){
-    echo ' Trang hiện tại: 1';
-  }
-?>
-                            <thead>
+                              $sql_trang = "select * from tbl_oder";
+                              $run_trang = mysqli_query($conn,$sql_trang);
+                              $sosach = mysqli_num_rows($run_trang);
+                              $sotrang = ceil($sosach/8);
+                              if ($sotrang == 0){
+                                echo ' Không có sách nào!';
+                              }
+                              else{
+                                echo ' Trang:';
+                              }
+                              for($b=1;$b<=$sotrang;$b++){
+                                echo '<a href="?trang='.$b.'" style="text-decoration:none">'.' '.$b.' '.'</a>';
+                              }
+                            ?>
+                            <?php
+                              echo '</br>';
+                              if($get_trang >= 1){
+                                echo ' Trang hiện tại: '.$get_trang;
+                              }
+                                if($get_trang == '' && $sotrang >= 1){
+                                echo ' Trang hiện tại: 1';
+                              }
+                            ?>
+                           <!--  <thead>
                                <tr>
                                     <td><input type="checkbox" name="checkAll" id="checkAll"></td>
                                     <td><span class="thead-text">STT</span></td>
                                     <td><span class="thead-text">Mã đơn hàng</span></td>
-                                    <td><span class="thead-text">Họ và tên</span></td>
+                                    <td><span class="thead-text">Tên khách hàng</span></td>
                                     <td><span class="thead-text">số sản phẩm</span></td>
                                     <td><span class="thead-text">Tổng giá</span></td>
-                                  
-                                  
-                                     <td><span class="thead-text">Chi tiết</span></td>
+                                   <td><span class="thead-text">Chi tiết</span></td>
                                 </tr>
-                            </thead>
+                            </thead> -->
                         </table>
 
                   </div>
