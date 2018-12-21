@@ -130,24 +130,14 @@
                                 echo ' Trang hiện tại: 1';
                               }
                             ?>
-                           <!--  <thead>
-                               <tr>
-                                    <td><input type="checkbox" name="checkAll" id="checkAll"></td>
-                                    <td><span class="thead-text">STT</span></td>
-                                    <td><span class="thead-text">Mã đơn hàng</span></td>
-                                    <td><span class="thead-text">Tên khách hàng</span></td>
-                                    <td><span class="thead-text">số sản phẩm</span></td>
-                                    <td><span class="thead-text">Tổng giá</span></td>
-                                   <td><span class="thead-text">Chi tiết</span></td>
-                                </tr>
-                            </thead> -->
+                          
                         </table>
 
                   </div>
                 </div>
               </div>
             </div>
-            <!-- /page content -->
+          
 
       </div>
     </div>

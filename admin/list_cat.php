@@ -115,15 +115,7 @@
     echo ' Trang hiện tại: 1';
   }
 ?>
-                            <!-- <thead>
-                                <tr>
-                                    <td><input type="checkbox" name="checkAll" id="checkAll"></td>
-                                    <td><span class="thead-text">STT</span></td>
-                                    <td><span class="thead-text">ID</span></td>
-                                    <td><span class="thead-text">Tên danh mục</span></td>
-                                    <td><span class="thead-text">Mô tả</span></td>
-                                </tr>
-                            </thead> -->
+                           
                         </table>
 
                   </div>

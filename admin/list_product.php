@@ -140,19 +140,7 @@
     echo ' Trang hiện tại: 1';
   }
 ?>
-                            <!-- <thead>
-                                <tr>
-                                    <td><input type="checkbox" name="checkAll" id="checkAll"></td>
-                                    <td><span class="thead-text">STT</span></td>
-                                    <td><span class="thead-text">ID</span></td>
-                                    <td><span class="thead-text">Mã sản phẩm</span></td>
-                                    <td><span class="thead-text">Hình ảnh</span></td>
-                                    <td><span class="thead-text">Tên sản phẩm</span></td>
-                                    <td><span class="thead-text">Giá</span></td>
-                                    <td><span class="thead-text">Danh mục</span></td>
-                                    <td><span class="thead-text">Chi tiết</span></td>
-                                </tr>
-                            </thead> -->
+  
                         </table>
 
                   </div>
