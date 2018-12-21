@@ -14,7 +14,7 @@ if($dem == 0)
   echo "
   <script language='javascript'>
     alert('Tài khoản không tồn tại');
-    window.open('http://localhost/mudcappro/admin/login.php','_self', 1);
+    window.open('/PHP_WebCuaHangDT_Team5/admin/login.php','_self', 1);
   </script>
   ";
 }
@@ -26,7 +26,7 @@ else
     echo "
   <script language='javascript'>
     alert('Mật khẩu đăng nhập không đúng');
-    window.open('/Project_PHP_Team5/admin/login.php','_self', 1);
+    window.open('/PHP_WebCuaHangDT_Team5/admin/login.php','_self', 1);
   </script>
   ";
   else
@@ -38,7 +38,7 @@ else
     echo "
     <script language='javascript'>
       alert('Đăng nhập thành công');
-      window.open('/Project_PHP_Team5/admin/list_product.php','_self', 1);
+      window.open('/PHP_WebCuaHangDT_Team5/admin/list_product.php','_self', 1);
     </script>
     ";
 
