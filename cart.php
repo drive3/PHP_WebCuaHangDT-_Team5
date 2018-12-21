@@ -63,11 +63,11 @@ require('header.php') ;
                             <td>
                                 <a href="" title="" class="name-product"><?php echo $row['name']?></a>
                             </td>
-                            <td><?php echo $row['price']?></td>
+                            <td><?php echo $row['price'] ?></td>
                             <td>
                                 <input readonly="readonly" type="text" name="num-order" value="<?php echo $value?>" class="num-order">
                             </td>
-                            <td><?php echo number_format($row['price']); ?></td>
+                            <td><?php echo number_format($row['price'] * $value); ?></td>
                             <td>
                               <?php 
                                 echo '<a href="cart.php?them='.$id.'"  >Thêm</a><br><a href="cart.php?tru='.$id.'" >Giảm</a> <a href="cart.php?xoa='.$id.'"  title="" class="del-product"><i class="fa fa-trash-o"></i></a></br></br></br>'; ?>

@@ -41,7 +41,7 @@
             <div class="right_col" role="main">
               <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                  <h1>SẢN PHẨM SALE</h1>
+                  <h1>Danh Sách Sản Phảm Sale</h1>
                   <div>
                     <p style="text-align: right;"><a href="add_product_sale.php">Thêm mới <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></p>
                      <p style="text-align: right;"><a href="search_product_sale.php">Tìm kiếm <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></p>
@@ -65,18 +65,18 @@
                                 <?php
                                include("../config/dbconfig.php");
                                 if(isset($_GET['trang'])){
-    $get_trang = $_GET['trang'];
-  }
-  else{
-    $get_trang = '';
-  }
-  if ($get_trang == '' || $get_trang == 1){
-    $trang = 0;
-  }
-  else
-  {
-    $trang = ($get_trang*9)-9;
-  }
+                                    $get_trang = $_GET['trang'];
+                                  }
+                                  else{
+                                    $get_trang = '';
+                                  }
+                                  if ($get_trang == '' || $get_trang == 1){
+                                    $trang = 0;
+                                  }
+                                  else
+                                  {
+                                    $trang = ($get_trang*9)-9;
+                                  }
                                 $sql = "select * from tbl_product_sale order by id asc";
                                 $run = mysqli_query($conn, $sql);
                                 $i = 0;

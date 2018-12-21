@@ -95,7 +95,7 @@ require('header.php') ?>
     <footer id="footer" class="hoc clear"> 
       <!-- ################################################################################################ -->
         <div class="one_quarter first">
-        <h6 class="heading">Team</h6>
+        <h6 class="heading">Team 5</h6>
         
       </div>
       <div class="one_quarter">

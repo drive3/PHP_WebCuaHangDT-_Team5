@@ -41,7 +41,7 @@
             <div class="right_col" role="main">
               <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                  <h1>SẢN PHẨM</h1>
+                  <h1>Danh Sách Sản Phẩm</h1>
                   <div>
                     <p style="text-align: right;"><a href="add_product.php">Thêm mới <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></p>
                      <p style="text-align: right;"><a href="search_product.php">Tìm kiếm <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></p>
