@@ -13,7 +13,7 @@
 		echo '
 		<script type="text/javascript">
 			alert("Sửa danh mục lỗi. Vui lòng điền đầy đủ thông tin!!!");
-			window.location.href="/Project_PHP_Team5/admin/?page=change_cat&id=$id";
+			window.location.href="/PHP_WebCuaHangDT_Team5/admin/?page=change_cat&id=$id";
 		</script>';
 	} else {
 		$sql = "UPDATE tbl_category SET title = '$title', content = '$content' WHERE id = '$id'";
@@ -23,6 +23,6 @@
 	echo '
 		<script type="text/javascript">
 			alert("Sửa danh mục thành công!!!");
-			window.location.href="/Project_PHP_Team5/admin/list_cat.php";
+			window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_cat.php";
 		</script>';
 ;?>

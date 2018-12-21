@@ -22,7 +22,7 @@
         echo '
             <script type="text/javascript">
                 alert("Mua hàng thành công");
-                window.location.href="/Project_PHP_Team5/?page=home";
+                window.location.href="/PHP_WebCuaHangDT_Team5/?page=home";
             </script>';
     }
  ?>

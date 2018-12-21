@@ -22,6 +22,6 @@
 	echo '
 		<script type="text/javascript">
 			alert("Thêm mới bài viết thành công!!!");
-			window.location.href="/Project_PHP_Team5/admin/list_post.php";
+			window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_post.php";
 		</script>';
 ;?>

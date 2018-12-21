@@ -15,6 +15,6 @@
     echo '
         <script type="text/javascript">
             alert("Xóa sản phẩm thành công!!!");
-            window.location.href="/Project_PHP_Team5/admin/list_product_sale.php";
+            window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_product_sale.php";
         </script>';
 ;?>

@@ -18,6 +18,6 @@
 	echo '
 		<script type="text/javascript">
 			alert("Thêm mới banner thành công!!!");
-			window.location.href="/Project_PHP_Team5/admin/list_banner.php";
+			window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_banner.php";
 		</script>';
 ;?>
