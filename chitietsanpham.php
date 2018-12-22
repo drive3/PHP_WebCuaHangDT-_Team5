@@ -87,13 +87,9 @@ require('header.php') ?>
 
  
 </div>
-
-<!-- Footer Background Image Wrapper -->
 <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/x1.jpg');"> 
-  <!-- ################################################################################################ -->
   <div class="wrapper row4">
     <footer id="footer" class="hoc clear"> 
-      <!-- ################################################################################################ -->
         <div class="one_quarter first">
         <h6 class="heading">Team 5</h6>
         
@@ -123,7 +119,6 @@ require('header.php') ?>
 			0974560838
         </ul>
       </div>
-      <!-- ################################################################################################ -->
     </footer>
   </div>
  
@@ -132,12 +127,9 @@ require('header.php') ?>
      
     </div>
   </div>
-  <!-- ################################################################################################ -->
 </div>
-<!-- End Footer Background Image Wrapper -->
 
 <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-<!-- JAVASCRIPTS -->
 <script src="../layout/scripts/jquery.min.js"></script>
 <script src="../layout/scripts/jquery.backtotop.js"></script>
 <script src="../layout/scripts/jquery.mobilemenu.js"></script>
