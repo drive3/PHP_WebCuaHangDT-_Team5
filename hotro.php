@@ -26,26 +26,6 @@ Thegioididong.com hoàn lại tiền với mức phí thêm 5% so với tháng t
 
 VD: tháng thứ 2 hoàn lại với giá 75% giá trên hoá đơn, tháng thứ 3 là 70%...
 
- 
-
-<br>Sản phẩm không lỗi (không phù hợp với nhu cầu của khách hàng):
-<br>Tháng 1 
-Tháng 2 - 12
-
-<br>Hoàn lại tiền máy với giá bằng 80% giá trên hoá đơn hoặc theo giá bán hiện tại của sản phẩm đổi trả cùng model, cùng tháng bảo hành được niêm yết tại trang sản phẩm đổi trả.
-
-Hoàn lại tiền với mức phí thêm 5% so với tháng thứ 1 (80%). VD: tháng thứ 2 hoàn lại tiền với mức giá 75% giá trên hoá đơn, tháng thứ 3 là 70%...
-
- 
-
-Công ty nhập lại sản phẩm cũ theo điều khoản "trả lại hàng" đồng thời xuất bán lại sản phẩm mới.
-Phần chênh lệch giá là khoản phí sử dụng khách hàng phải trả và công ty xuất hoá đơn giá trị gia tăng (GTGT) cho khoản phí này.
-
-Sản phẩm lỗi do người sử dụng:
-Không đủ điều kiện bảo hành theo qui định của hãng.
-Máy không giữ nguyên 100% hình dạng ban đầu.
-Màn hình bị trầy xước.
-=> Không áp dụng bảo hành, đổi trả. quanghien.com hỗ trợ chuyển bảo hành, khách hàng chịu chi phí sửa chữa.
     </div>
     <div class="clear"></div>
   </main>
