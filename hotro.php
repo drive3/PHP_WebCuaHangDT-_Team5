@@ -2,29 +2,30 @@
 
 <div class="wrapper row3">
   <main class="hoc container clear"> 
-    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <div class="content"> 
-       <h2>Tư Vấn Hỗ Trợ Khách Hàng</h2>
+       <h2>TƯ VẤN HỖ TRỢ KHÁCH HÀNG</h2>
    <img src="images/demo/backgrounds/hotro.png">
       
     <br>I. SẢN PHẨM MỚI: ĐIỆN THOẠI, MÁY TÍNH BẢNG, LAPTOP, ĐỒNG HỒ THÔNG MINH
-<br>Sản phẩm lỗi do nhà sản xuất:
-Tháng 1 
-Tháng 2 - 12
+      <br>Sản phẩm lỗi do nhà sản xuất:
+      Tháng 1 
+      Tháng 2 - 12
 
-<br>1 đổi 1 (cùng mẫu, cùng màu, cùng dung lượng...). Trường hợp sản phẩm đổi hết hàng, khách hàng có thể đổi sang sản phẩm khác cùng nhóm hàng có giá trị lớn hơn 50% giá trị sản phẩm lỗi (hoàn tiền phần chênh lệch).
+      <br>1 đổi 1 (cùng mẫu, cùng màu, cùng dung lượng...). Trường hợp sản phẩm đổi hết hàng, khách hàng có thể đổi sang sản phẩm khác cùng nhóm hàng có giá trị lớn hơn 50% giá trị sản phẩm lỗi (hoàn tiền phần chênh lệch).
 
-Hoặc:
-Thegioididong.com hoàn lại tiền máy với mức giá bằng 80% giá trên hoá đơn hoặc theo giá bán hiện tại của sản phẩm đổi trả (đã qua sử dụng) cùng model, cùng tháng bảo hành được niêm yết tại trang sản phẩm đổi trả.
+      Hoặc:
+      Thegioididong.com hoàn lại tiền máy với mức giá bằng 80% giá trên hoá đơn hoặc theo giá bán hiện tại của sản phẩm đổi trả (đã qua sử dụng) cùng model, cùng tháng bảo hành được niêm yết tại trang sản phẩm đổi trả.
 
- 
+       
 
-Gửi máy bảo hành theo quy định của hãng.
+      Gửi máy bảo hành theo quy định của hãng.
 
-Hoặc:
-Thegioididong.com hoàn lại tiền với mức phí thêm 5% so với tháng thứ 1 (80%).
+      Hoặc:
+      Thegioididong.com hoàn lại tiền với mức phí thêm 5% so với tháng thứ 1 (80%).
 
-VD: tháng thứ 2 hoàn lại với giá 75% giá trên hoá đơn, tháng thứ 3 là 70%...
+      VD: tháng thứ 2 hoàn lại với giá 75% giá trên hoá đơn, tháng thứ 3 là 70%...
 
     </div>
     <div class="clear"></div>
@@ -35,7 +36,7 @@ VD: tháng thứ 2 hoàn lại với giá 75% giá trên hoá đơn, tháng th�
   <div class="wrapper row4">
     <footer id="footer" class="hoc clear"> 
         <div class="one_quarter first">
-        <h6 class="heading">Team</h6>
+        <h6 class="heading">Team 5</h6>
         
       </div>
       <div class="one_quarter">

@@ -53,7 +53,7 @@ if($pass_new =='' || $confirm_pass ==''){
         $run = mysqli_query($conn,$sql);
         echo "
           <script language='javascript'>
-            alert('Đổi mật khẩu thành công!');
+            alert('Đổi mật khẩu thành công !');
             window.open(/PHP_WebCuaHangDT_Team5/admin/?page=change_pass','_self', 1);
           </script>";
       }

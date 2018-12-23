@@ -14,7 +14,7 @@
     $run = mysqli_query($conn,$sql);
     echo '
         <script type="text/javascript">
-            alert("Xóa danh mục thành công!!!");
+            alert("Xóa danh mục thành công !");
             window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_cat.php";
         </script>';
 ;?>

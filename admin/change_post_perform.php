@@ -16,7 +16,7 @@
 	if($title =='' || $content == '') {		
 		echo '
 		<script type="text/javascript">
-			alert("Sửa bài viết lỗi. Vui lòng điền đầy đủ thông tin!!!");
+			alert("Sửa bài viết lỗi. Vui lòng điền đầy đủ thông tin !");
 			window.location.href="/PHP_WebCuaHangDT_Team5/admin/?page=change_post&id=$id";
 		</script>';
 	} else {
@@ -30,7 +30,7 @@
 	$run = mysqli_query($conn,$sql);
 	echo '
 		<script type="text/javascript">
-			alert("Sửa bài viết thành công!!!");
+			alert("Sửa bài viết thành công !");
 			window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_post.php";
 		</script>';
 ;?>
