@@ -12,7 +12,14 @@
     <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
     <!-- bootstrap-progressbar -->
     <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <!-- iCheck -->
+    <!-- iCh 
+    
+    
+    
+    
+    
+    
+    k -->
     <script src="../vendors/iCheck/icheck.min.js"></script>
     <!-- Skycons -->
     <script src="../vendors/skycons/skycons.js"></script>
