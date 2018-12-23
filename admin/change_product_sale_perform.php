@@ -23,7 +23,7 @@
 	if($id == '' || $name =='' || $masp == '' || $price =='' || $category =='') {		
 		echo '
 		<script type="text/javascript">
-			alert("Sửa danh mục lỗi. Vui lòng điền đầy đủ thông tin!!!");
+			alert("Sửa danh mục lỗi. Vui lòng điền đầy đủ thông tin !");
 			window.location.href="/PHP_WebCuaHangDT_Team5/admin/change_product_sale&id=$id";
 		</script>';
 	} else {
@@ -34,7 +34,7 @@
 	$run = mysqli_query($conn,$sql);
 	echo '
 		<script type="text/javascript">
-			alert("Sửa sản phẩm thành công!!!");
+			alert("Sửa sản phẩm thành công !");
 			window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_product_sale.php";
 		</script>';
 ;?>

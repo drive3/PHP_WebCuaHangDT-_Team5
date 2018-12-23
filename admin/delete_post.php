@@ -14,7 +14,7 @@
     $run = mysqli_query($conn,$sql);
    echo "
     <script language='javascript'>
-      alert('Đăng nhập thành công');
+      alert('Đăng nhập thành công ');
       window.open('".$site_admin."/list_post.php','_self', 1);
     </script>
     ";

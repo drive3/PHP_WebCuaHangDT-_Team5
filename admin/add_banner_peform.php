@@ -17,7 +17,7 @@
 	$run = mysqli_query($conn, $sql);
 	echo '
 		<script type="text/javascript">
-			alert("Thêm mới banner thành công!!!");
+			alert("Thêm mới banner thành công !");
 			window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_banner.php";
 		</script>';
 ;?>

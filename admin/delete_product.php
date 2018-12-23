@@ -14,7 +14,7 @@
     $run = mysqli_query($conn,$sql);
     echo '
         <script type="text/javascript">
-            alert("Xóa sản phẩm thành công!!!");
+            alert("Xóa sản phẩm thành công !");
             window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_product.php";
         </script>';
 ;?>

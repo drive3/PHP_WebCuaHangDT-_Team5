@@ -12,7 +12,7 @@
 	if($id == '' || $title =='' || $content == '') {		
 		echo '
 		<script type="text/javascript">
-			alert("Sửa danh mục lỗi. Vui lòng điền đầy đủ thông tin!!!");
+			alert("Sửa danh mục lỗi. Vui lòng điền đầy đủ thông tin !");
 			window.location.href="/PHP_WebCuaHangDT_Team5/admin/?page=change_cat&id=$id";
 		</script>';
 	} else {
@@ -22,7 +22,7 @@
 	$run = mysqli_query($conn,$sql);
 	echo '
 		<script type="text/javascript">
-			alert("Sửa danh mục thành công!!!");
+			alert("Sửa danh mục thành công ! ");
 			window.location.href="/PHP_WebCuaHangDT_Team5/admin/list_cat.php";
 		</script>';
 ;?>
