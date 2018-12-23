@@ -103,7 +103,6 @@
             </div>
             <!-- /page content -->
 
-            <?php include("bottom.php");?>
       </div>
     </div>
 
