@@ -25,8 +25,8 @@
     <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <link href="../build/css/custom.min.css" rel="stylesheet">
-  <script src="../js/tinymce/tinymce.min.js"></script>
+  <script src="../build/js/tinymce/tinymce.min.js"></script>
  
   <script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
-   <script src="ckeditor/ckfinder/ckfinder.js"></script>
+   <script src="../ckeditor/ckfinder/ckfinder.js"></script>
 </head>

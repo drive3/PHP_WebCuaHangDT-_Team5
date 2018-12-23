@@ -26,7 +26,7 @@
     <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <link href="../build/css/custom.min.css" rel="stylesheet">
-  <script src="../js/tinymce/tinymce.min.js"></script>
+  <script src="..//build/js/tinymce/tinymce.min.js"></script>
   <script>tinymce.init({ selector:'textarea' });</script>   
   </head>
 <?php
@@ -113,7 +113,6 @@
             </div>
             <!-- /page content -->
 
-            <?php include("bottom.php");?>
       </div>
     </div>
 
